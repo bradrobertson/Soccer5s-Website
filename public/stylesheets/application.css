@@ -1,0 +1,39 @@
+html{
+	height:100%;
+	}
+	body{
+		height:100%;
+		background:#191919;
+		color:#fff;
+		font:normal normal bold 1em arial, sans-serif;
+	}
+	#content{
+		position:relative;
+		background:url('/images/player.png') no-repeat top left;
+		top:185px;
+		width:680px;
+		height:370px;
+		margin:0 auto;
+		font-size:14px;
+		}
+		#logo{
+			position:absolute;
+			top:15px;
+			right:100px;
+		}
+		#intro{
+			position:absolute;
+			top:100px;
+			left:290px;
+			text-align:right;
+			}
+			p{
+				margin:3px 0;
+				}
+				p.impact{
+					text-transform:uppercase;
+					font:normal normal 27px impact;
+					}
+					p.impact span{
+						color:#fed801;
+					}
