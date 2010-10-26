@@ -11,7 +11,7 @@ gem 'capistrano'
 group :development, :test do
 	gem 'rspec-rails', '~> 2.0.1'
 	gem 'database_cleaner', '0.5.2'
-	
+	gem 'factory_girl'	
 end
 
 gem "simple_form"

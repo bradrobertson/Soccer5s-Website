@@ -9,12 +9,16 @@ html{
 	}
 	#content{
 		position:relative;
-		background:url('/images/player.png') no-repeat top left;
 		top:185px;
 		width:680px;
 		height:370px;
 		margin:0 auto;
 		font-size:14px;
+		}
+		#player{
+			width:312px;
+			height:232px;
+			z-index:9999;
 		}
 		#logo{
 			position:absolute;
@@ -36,4 +40,51 @@ html{
 					}
 					p.impact span{
 						color:#fed801;
-					}
+		}
+		#form{
+			position:relative;
+			width:365px;
+			height:150px;
+			border:1px solid #222;
+			position:absolute;
+			bottom:40px;
+			right:100px;
+			z-index:1;
+			}
+			#form form{
+				margin:30px 20px 10px 30px;
+			}
+			form *{
+				float:left;
+				z-index:100;
+			}
+			form input{
+				width:200px;
+				padding:3px;
+				font-size:14px;
+				border:2px solid #191919;
+				color:#111;
+				}
+				form input:focus{
+					outline:none;
+				}
+			form button{
+				border:0;
+				background:transparent;
+				margin-left:10px;
+			}
+			form button::-moz-focus-inner { border: 0; }
+			.disclaimer{
+				position:absolute;
+				bottom:0;
+				text-align:center;
+				text-transform:uppercase;
+				padding:15px;
+				border-top:1px solid #222;
+				font-size:12px;
+			}
+			.thanks{
+				text-align:center;
+				margin:40px 0 20px;
+			}
+			

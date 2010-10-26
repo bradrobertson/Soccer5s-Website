@@ -1,6 +1,8 @@
 Soccer5s::Application.routes.draw do
   
-  root :to => "public#home"
+  resources :clients, :only => [:new, :index, :show, :create]
+
+  root :to => "clients#new"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
