@@ -72,6 +72,7 @@ html{
 					outline:none;
 				}
 			form button{
+				outline:none;
 				border:0;
 				background:transparent;
 				margin-left:10px;
