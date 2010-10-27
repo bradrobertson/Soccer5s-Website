@@ -19,6 +19,11 @@ gem "simple_form"
 group :deployment do
 	gem 'capistrano'
 end
+
+group :production do
+	gem 'mysql', '~> 2.8.1'
+end
+
 # To use debugger
 # gem 'ruby-debug'
 

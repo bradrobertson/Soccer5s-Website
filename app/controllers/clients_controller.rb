@@ -12,7 +12,7 @@ class ClientsController < ApplicationController
   
   # GET /clients/1
   def show
-    @client = Client.find(params[:id])
+    # @client = Client.find(params[:id]) rescue Client.first
   end
 
   # POST /clients
@@ -20,7 +20,9 @@ class ClientsController < ApplicationController
     @client = Client.new(params[:client])
 
     if @client.save
-      redirect_to(@client, :notice => 'Client was successfully created.')
+      ClientMailer.client_email(@client).deliver
+      ClientMailer.admin_email(@client).deliver
+      redirect_to @client
     else
       render :action => "new"
     end
