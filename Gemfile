@@ -2,16 +2,11 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.0'
 
-# TDOO replace with mysql (maybe)
-gem 'sqlite3-ruby', :require => 'sqlite3'
-
-# Deploy with Capistrano
-gem 'capistrano'
-
 group :development, :test do
 	gem 'rspec-rails', '~> 2.0.1'
 	gem 'database_cleaner', '0.5.2'
 	gem 'factory_girl'	
+	gem 'sqlite3-ruby', :require => 'sqlite3'
 end
 
 gem "simple_form"
