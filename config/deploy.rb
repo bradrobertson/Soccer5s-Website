@@ -1,7 +1,7 @@
 require 'bundler/deployment'
 
 set :application, "soccer5s"
-set :deploy_to, "/var/www/#{application}-rails"
+set :deploy_to, "/var/www/#{application}"
 
 set :scm, :git
 set :repository,  "/Users/bradrobertson/git/soccer5s"
@@ -11,9 +11,9 @@ set :deploy_via, :copy
 set :copy_exclude, [".git", ".gitignore"]     # ignore all git files
 
 set :use_sudo, false
-set :user, 'brad'
+set :user, 'app'
 
-server "rumyagent.com", :app, :web, :db, :primary => true
+server "bcomsolutions.ca", :app, :web, :db, :primary => true
 
 namespace :deploy do
   task :start do ; end
