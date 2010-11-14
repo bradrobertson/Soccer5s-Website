@@ -1,4 +1,4 @@
-require 'bundler/deployment'
+require 'bundler/capistrano'
 
 set :rvm_ruby_string, 'ruby-1.9.2-p0'
 set :rvm_type, :user
@@ -20,7 +20,7 @@ server "bcomsolutions.ca", :app, :web, :db, :primary => true
 
 namespace :deploy do
   task :start, :roles => :app do
-      # run "touch #{current_release}/tmp/restart.txt"
+      run "touch #{current_release}/tmp/restart.txt"
     end
     
   task :stop do ; end
