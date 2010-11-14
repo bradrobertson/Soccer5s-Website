@@ -1,5 +1,8 @@
 require 'bundler/deployment'
 
+set :rvm_ruby_string, 'ruby-1.9.2-p0'
+set :rvm_type, :user
+
 set :application, "soccer5s"
 set :deploy_to, "/var/www/#{application}"
 
@@ -16,10 +19,14 @@ set :user, 'app'
 server "bcomsolutions.ca", :app, :web, :db, :primary => true
 
 namespace :deploy do
-  task :start do ; end
+  task :start, :roles => :app do
+      # run "touch #{current_release}/tmp/restart.txt"
+    end
+    
   task :stop do ; end
+  
   task :restart, :roles => :app, :except => { :no_release => true } do
-    run "touch #{File.join(current_path,'tmp','restart.txt')}"
+    run "touch #{current_release}/tmp/restart.txt"
   end
   
   after "deploy:symlink", "db:link"
