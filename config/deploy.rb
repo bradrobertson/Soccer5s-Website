@@ -16,7 +16,7 @@ set :copy_exclude, [".git", ".gitignore"]     # ignore all git files
 set :use_sudo, false
 set :user, 'app'
 
-server "bcomsolutions.ca", :app, :web, :db, :primary => true
+server "soccer5s.com", :app, :web, :db, :primary => true
 
 namespace :deploy do
   task :start, :roles => :app do
@@ -30,7 +30,7 @@ namespace :deploy do
   end
   
   after "deploy:symlink", "db:link"
-  after "deploy", "deploy:migrate"
+  before "deploy:restart", "deploy:migrate"
 end
 
 namespace :db do
