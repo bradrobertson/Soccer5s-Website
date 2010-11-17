@@ -5,16 +5,4 @@
     <p>Australia's premium 5 a side soccer centres</p>
     <p class="impact">Coming Soon to <span>Australia</span></p>
   </div>
-  <div id="form">
-    <%= form_for @client do |f| %>
-      <div class="input string email optional">
-        <%= f.label :email, "Sign up to be notified when we launch" %>
-        <p>
-          <%= f.text_field :email %>
-          <button type="submit"><%= image_tag 'submit.png' %></button>
-        </p>
-      </div>
-    <% end %>
-    <p class="disclaimer">We Won’t Sell or Abuse Your Email in Anyway. We Will Only Email Once We Launch.</p>
-  </div>
 </div>
