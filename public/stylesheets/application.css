@@ -9,9 +9,8 @@ html{
 	}
 	#content{
 		position:relative;
-		top:185px;
-		width:680px;
-		height:370px;
+		width:960px;
+		height:100%;
 		margin:0 auto;
 		font-size:14px;
 		}
