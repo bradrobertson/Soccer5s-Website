@@ -1,0 +1,38 @@
+/**
+*		Main menu for soccer5s
+*
+*
+*/
+ul#main-menu{
+	overflow:auto;
+	background:#060405 url('/images/sprite.png') repeat-x 0px 0px;
+	font: normal normal bold 14px arial, sans-serif;
+	}
+	#main-menu li{
+		float:left;
+		height:41px;
+		border-right:1px solid #bca21e;
+		border-left:1px solid #fee460;
+		}
+		#main-menu li:first-child{border-left:0;}
+		#main-menu li:last-child{border-right:0;}
+		li#home-link{width:97px;}
+		li#what-link{width:164px;}
+		li#facility-link{width:112px;}
+		li#kids-link{width:133px;}
+		li#training-link{width:106px;}
+		li#leagues-link{width:108px;}
+		li#about-link{width:111px;}
+		li#contact-link{width:112px;}
+		
+		#main-menu li.active{background-color:#060405;}
+
+		#main-menu a{
+			display:block;
+			line-height:41px;
+			text-decoration:none;
+			text-transform:uppercase;
+			color:#000;
+			text-align:center;
+			}
+			#main-menu li.active a{color:#fdd716;}

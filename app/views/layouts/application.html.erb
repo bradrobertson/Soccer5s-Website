@@ -3,13 +3,14 @@
 <head>
   <title>Soccer5s</title>
   <%= stylesheet_link_tag "http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css" %>
-  <%= stylesheet_link_tag 'application' %>
+  <%= stylesheet_link_tag :all %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="content">
+    <%= render :partial => 'shared/main_menu' %>
+    <%= yield %>
+  </div>
 </body>
 
 <script type="text/javascript">
