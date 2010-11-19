@@ -10,7 +10,6 @@ ul#main-menu{
 	}
 	#main-menu li{
 		float:left;
-		height:41px;
 		border-right:1px solid #bca21e;
 		border-left:1px solid #fee460;
 		}
@@ -29,6 +28,7 @@ ul#main-menu{
 
 		#main-menu a{
 			display:block;
+			height:41px;
 			line-height:41px;
 			text-decoration:none;
 			text-transform:uppercase;

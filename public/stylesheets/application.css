@@ -15,3 +15,24 @@ html{
 		font-size:14px;
 		background:#292929;
 		}
+		#banner{
+			background:#060405;
+			height:210px;
+			border-bottom:5px solid #fdd636;
+			}
+			#logo{
+				padding:30px 0 0 50px;
+			}
+		#body{
+			position:absolute;
+			width:100%;
+			top:256px;
+			bottom:0;
+			background:#ebebeb;
+			}
+			#main{
+				
+			}
+			#side{
+				border-left:#cecece;
+			}

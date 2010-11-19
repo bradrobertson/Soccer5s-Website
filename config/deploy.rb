@@ -9,7 +9,7 @@ set :scm, :git
 set :repository,  "/Users/bradrobertson/git/soccer5s"
 set :deploy_via, :copy
 
-set :copy_exclude, [".git", ".gitignore"]     # ignore all git files
+set :copy_exclude, [".git", ".gitignore", "public/images/src"]     # ignore all git files
 
 set :use_sudo, false
 set :user, 'app'

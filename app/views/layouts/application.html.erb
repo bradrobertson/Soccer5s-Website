@@ -10,7 +10,13 @@
 <body>
   <div id="content">
     <%= render :partial => 'shared/main_menu' %>
-    <%= yield %>
+    <div id="banner">
+      <div id="logo"><img src="/images/logos/two.png" alt="logo" /></div>
+      <%= content_for :banner %>
+    </div>
+    <div id="body">
+      <%= yield %>
+    </div>
   </div>
 </body>
 
