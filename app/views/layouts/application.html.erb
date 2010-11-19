@@ -3,10 +3,6 @@
 <head>
   <title>Soccer5s</title>
   
-  <!--[if lt IE 7]>
-    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js">IE7_PNG_SUFFIX=".png";</script>
-  <![endif]-->
-  
   <%= stylesheet_link_tag "http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css" %>
   <%= stylesheet_link_tag :all %>
   <%= csrf_meta_tag %>
@@ -29,4 +25,9 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">IE7_PNG_SUFFIX=".png";</script>
+<![endif]-->
+
 </html>
