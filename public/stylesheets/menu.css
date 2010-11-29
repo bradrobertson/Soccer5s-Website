@@ -23,8 +23,6 @@ ul#main-menu{
 		li#leagues-link{width:108px;}
 		li#about-link{width:111px;}
 		li#contact-link{width:112px;}
-		
-		#main-menu li.active{background-color:#060405;}
 
 		#main-menu a{
 			display:block;
@@ -34,5 +32,33 @@ ul#main-menu{
 			text-transform:uppercase;
 			color:#000;
 			text-align:center;
-			}
-			#main-menu li.active a{color:#fdd716;}
+/*			background:transparent url('/images/menu-bullet.png') no-repeat 90% 60%;*/
+}
+			
+/**
+*		Denote 'active' links by their body id
+*
+*/
+#home li#home-link,
+#what li#what-link,
+#facility li#facility-link,
+#kids li#kids-link,
+#training li#training-link,	
+#leagues li#leagues-link,
+#about li#about-link,
+#contact li#contact-link{
+	background-color:#060405;
+	border-left:1px solid #000;
+}
+#home li#home-link{border-left:0;}
+	
+	#home li#home-link a,
+	#what li#what-link a,
+	#facility li#facility-link a,
+	#kids li#kids-link a,
+	#training li#training-link a,	
+	#leagues li#leagues-link a,
+	#about li#about-link a,
+	#contact li#contact-link a{
+		color:#fdd716;
+}

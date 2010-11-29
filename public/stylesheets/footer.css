@@ -1,0 +1,12 @@
+#footer{
+	padding:10px;
+	background:#1b1b1b;
+	border:1px solid #363738;
+	}
+	#footer a{
+		color:#fff;
+		font-weight:normal;
+	}
+	#footer a:first-child{
+		color:#fdd716;
+	}

@@ -3,20 +3,35 @@
 <head>
   <title>Soccer5s</title>
   
-  <%= stylesheet_link_tag "http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css" %>
   <%= stylesheet_link_tag :all %>
   <%= csrf_meta_tag %>
 </head>
-<body>
+<body id="<%= page %>">
   <div id="content">
     <%= render :partial => 'shared/main_menu' %>
+    
     <div id="banner">
       <div id="logo"><img src="/images/logos/two.png" alt="logo" /></div>
       <%= content_for :banner %>
     </div>
+    
     <div id="body">
+      <% if content_for? :sidebar %>
+        <div id="sidebar">
+          <div class="wrap"><%= content_for :sidebar %></div>
+        </div>
+      <% end %>
       <%= yield %>
     </div>
+    
+    <div id="footer">
+      <%= link_to raw("&copy; Soccer5s 2010"), "#" %> |
+      <%= link_to "Contact", "#" %> |
+      <%= link_to "Careers", "#" %> |
+      <%= link_to "Corporate Site", "#" %> |
+      <%= link_to "Site Map", "#" %>
+    </div>
+    
   </div>
 </body>
 

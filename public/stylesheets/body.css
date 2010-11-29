@@ -1,0 +1,38 @@
+#body{
+	height:600px;
+	background:#ebebeb;
+	}
+	#main{
+		
+		}
+		#main ul{
+			overflow:auto;
+			
+		}
+		#main-content{
+			border-top:#d6d6d6;
+			margin-top:-1px;
+			background:#ebebeb url('/images/sprite.png') repeat-x -41px;
+	}
+	#sidebar{
+		border-left:1px solid #cecece;
+		float:right;
+		height:100%;
+		width:310px;
+		color:#5a5a5a;
+		}
+		#sidebar h2{
+			font:normal normal bold 25px helvetica, arial, sans-serif;
+		}
+		#sidebar p{
+			margin:10px 0;
+			font-size:12px;
+			}
+			#sidebar p a{
+				color:#5a5a5a;
+				font-weight:bold;
+				font-style:italic;
+			}
+			#sidebar p img{
+				margin-top:20px;
+			}

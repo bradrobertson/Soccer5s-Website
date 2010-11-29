@@ -1,0 +1,17 @@
+#banner{
+	position:relative;
+	background:#060405 url() no-repeat top right;
+	height:210px;
+	border-bottom:5px solid #fdd636;
+	}
+	#logo{
+		padding:30px 0 0 50px;
+	}
+	#title{
+		position:absolute;
+		bottom:30px;
+		left:30px;
+		color:#fdd716;
+		font:normal normal bold 30px helvetica, arial, sans-serif;
+		text-transform:uppercase;
+	}
