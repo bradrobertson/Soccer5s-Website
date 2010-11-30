@@ -3,16 +3,8 @@
 	background:#ebebeb;
 	}
 	#main{
-		
-		}
-		#main ul{
-			overflow:auto;
-			
-		}
-		#main-content{
-			border-top:#d6d6d6;
-			margin-top:-1px;
-			background:#ebebeb url('/images/sprite.png') repeat-x -41px;
+		margin-right:311px;
+/*		background:#ebebeb url('/images/sprite.png') repeat-x -41px;*/
 	}
 	#sidebar{
 		border-left:1px solid #cecece;
