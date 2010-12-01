@@ -9,7 +9,7 @@ set :scm, :git
 set :repository,  "/Users/bradrobertson/git/soccer5s"
 set :deploy_via, :copy
 
-set :copy_exclude, [".git", ".gitignore", "public/images/src"]     # ignore all git files
+set :copy_exclude, [".git", ".gitignore", "public/images/src"]     # ignore all git files and src images
 
 set :use_sudo, false
 set :user, 'app'
@@ -17,6 +17,7 @@ set :user, 'app'
 server "soccer5s.com", :app, :web, :db, :primary => true
 
 task :staging do
+  set :rails_env, 'staging'
   set :deploy_to, "/var/www/#{application}-staging"
   set :branch, "staging"
 end
