@@ -4,7 +4,6 @@
 	}
 	#main{
 		margin-right:311px;
-/*		background:#ebebeb url('/images/sprite.png') repeat-x -41px;*/
 	}
 	#sidebar{
 		border-left:1px solid #cecece;
@@ -12,9 +11,6 @@
 		height:100%;
 		width:310px;
 		color:#5a5a5a;
-		}
-		#sidebar h2{
-			font:normal normal bold 25px helvetica, arial, sans-serif;
 		}
 		#sidebar p{
 			margin:10px 0;

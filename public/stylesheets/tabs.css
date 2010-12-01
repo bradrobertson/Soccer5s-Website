@@ -1,18 +1,35 @@
 ul.tabs{
-	overflow:hidden;
+	float:left;
+	width:639px;
 	padding:10px 0 0 10px;
 	background:#e8e8e8;
 	}
 	ul.tabs li{
+		position:relative;
 		float:left;
 		margin-right:10px	;
 		border:1px solid #d6d6d6;
 		border-bottom:0;
+	}
+	ul.tabs li.current{
+		top:1px;
 		}
 		ul.tabs li a{
 			display:block;
 			padding:10px 15px;
 			font:normal normal bold 12px arial, sans-serif;
 			color:#5a5a5a;
-			background:#f8f8f8;
+			border-left:1px solid #f9f9f9;
+			background:#f9f9f9 url('/images/sprite.png') repeat-x center -42px;
 		}
+		ul.tabs li.current a{
+			background-image:none;
+}
+
+div.panes{
+	clear:left;
+	padding:30px;
+	height:400px;
+	background:#ebebeb url('/images/sprite.png') repeat-x center -77px;
+	border-top:1px solid #d6d6d6;
+}
