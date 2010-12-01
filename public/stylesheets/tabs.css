@@ -1,6 +1,5 @@
 ul.tabs{
 	overflow:hidden;
-	width:640px;
 	padding:10px 0 0 10px;
 	background:#e8e8e8 url('/images/sprite.png') repeat-x center 44px;
 	}
@@ -24,7 +23,6 @@ ul.tabs{
 }
 
 div.panes{
-	clear:left;
 	padding:30px;
 	height:400px;
 	background:#ebebeb url('/images/sprite.png') repeat-x center -78px;
