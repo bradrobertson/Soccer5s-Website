@@ -28,6 +28,10 @@ q:before,q:after {
 }
 abbr,acronym { border:0;
 }
-a{
+
+a,
+a:active,
+a:focus{
 	text-decoration:none;
+	outline:none;
 }
