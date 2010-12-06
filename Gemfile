@@ -10,6 +10,7 @@ group :development, :test do
 end
 
 gem "simple_form"
+gem 'jammit', '0.5.4'
 
 group :deployment do
 	gem 'capistrano'

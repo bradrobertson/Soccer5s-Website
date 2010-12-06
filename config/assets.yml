@@ -1,0 +1,19 @@
+embed_assets: on
+
+javascripts:
+  soccer5s:
+    - public/javascripts/application.js
+
+stylesheets:
+  soccer5s:
+    - public/stylesheets/reset.css
+    - public/stylesheets/application.css
+    - public/stylesheets/fonts.css
+    - public/stylesheets/body.css
+    - public/stylesheets/about.css
+    - public/stylesheets/banner.css
+    - public/stylesheets/carousel.css
+    - public/stylesheets/menu.css
+    - public/stylesheets/footer.css
+    - public/stylesheets/tabs.css
+    - public/stylesheets/ie6.css

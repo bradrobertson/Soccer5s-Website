@@ -3,7 +3,7 @@
 <head>
   <title>Soccer5s</title>
   
-  <%= stylesheet_link_tag :all %>
+  <%= include_stylesheets :soccer5s %>
   <%= csrf_meta_tag %>
 </head>
 <body id="<%= page %>">
@@ -11,7 +11,7 @@
     <%= render :partial => 'shared/main_menu' %>
     
     <div id="banner">
-      <div id="logo"><img src="/images/logos/two.png" alt="logo" /></div>
+      <div id="logo"><img src="/images/logos/white-trans.png" alt="logo" /></div>
       <%= content_for :banner %>
     </div>
     
@@ -35,7 +35,8 @@
   </div>
 </body>
 
-<%= javascript_include_tag 'http://cdn.jquerytools.org/1.2.5/jquery.tools.min.js', 'application' %>
+<%= javascript_include_tag 'http://cdn.jquerytools.org/1.2.5/jquery.tools.min.js' %>
+<%= include_javascripts :soccer5s %>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19297403-1']);
@@ -49,7 +50,7 @@
 </script>
 
 <!--[if lt IE 9]>
-<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">IE7_PNG_SUFFIX=".png";</script>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
 <![endif]-->
 
 </html>

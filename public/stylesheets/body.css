@@ -5,6 +5,9 @@
 	#main{
 		margin-right:311px;
 	}
+	* html #main{
+		margin-right:300px;
+	}
 	#sidebar{
 		border-left:1px solid #cecece;
 		float:right;

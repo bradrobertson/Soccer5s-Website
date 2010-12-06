@@ -5,7 +5,7 @@
 */
 ul#main-menu{
 	overflow:auto;
-	background:#060405 url('/images/sprite.png') repeat-x 0px 0px;
+	background:#060405 url('/images/embed/menu.png') repeat-x;
 	font: normal normal bold 14px arial, sans-serif;
 	}
 	#main-menu li{
@@ -24,6 +24,11 @@ ul#main-menu{
 		li#about-link{width:111px;}
 		li#contact-link{width:112px;}
 
+		ul#main-menu li#home-link a{background-position: 75px 22px;}
+		ul#main-menu li#what-link a{background-position: 147px 22px;}
+		ul#main-menu li#kids-link a{background-position: 119px 22px;}
+		ul#main-menu li#contact-link a{background-position: 92px 22px;}
+
 		#main-menu a{
 			display:block;
 			height:41px;
@@ -32,7 +37,7 @@ ul#main-menu{
 			text-transform:uppercase;
 			color:#000;
 			text-align:center;
-/*			background:transparent url('/images/menu-bullet.png') no-repeat 90% 60%;*/
+			background:transparent url('/images/embed/menu-bullet.png') no-repeat 90% 22px;
 }
 			
 /**
@@ -52,13 +57,14 @@ ul#main-menu{
 }
 #home li#home-link{border-left:0;}
 	
-	#home li#home-link a,
-	#what li#what-link a,
-	#facility li#facility-link a,
-	#kids li#kids-link a,
-	#training li#training-link a,	
-	#leagues li#leagues-link a,
-	#about li#about-link a,
-	#contact li#contact-link a{
-		color:#fdd716;
+#home li#home-link a,
+#what li#what-link a,
+#facility li#facility-link a,
+#kids li#kids-link a,
+#training li#training-link a,	
+#leagues li#leagues-link a,
+#about li#about-link a,
+#contact li#contact-link a{
+	color:#fdd716;
+	background:transparent url('/images/embed/menu-bullet-on.png') no-repeat 90% 22px;
 }

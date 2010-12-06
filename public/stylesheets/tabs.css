@@ -1,10 +1,9 @@
 ul.tabs{
 	overflow:hidden;
 	padding:10px 0 0 10px;
-	background:#e8e8e8 url('/images/sprite.png') repeat-x center 44px;
+	background:#e8e8e8 url('/images/embed/tab-bottom.png') repeat-x bottom;
 	}
 	ul.tabs li{
-		position:relative;
 		float:left;
 		margin-right:10px	;
 		border:1px solid #d6d6d6;
@@ -16,7 +15,7 @@ ul.tabs{
 			font:normal normal bold 12px arial, sans-serif;
 			color:#5a5a5a;
 			border-left:1px solid #f9f9f9;
-			background:#f9f9f9 url('/images/sprite.png') repeat-x center -43px;
+			background:#f9f9f9 url('/images/embed/tabs.png') repeat-x bottom;
 		}
 		ul.tabs li.current a{
 			background-image:none;
@@ -25,5 +24,5 @@ ul.tabs{
 div.panes{
 	padding:30px;
 	height:400px;
-	background:#ebebeb url('/images/sprite.png') repeat-x center -78px;
+	background:#ebebeb url('/images/embed/body.png') repeat-x top;
 }
