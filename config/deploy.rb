@@ -18,12 +18,12 @@ server "soccer5s.com", :app, :web, :db, :primary => true
 
 task :staging do
   set :rails_env, 'staging'
-  set :deploy_to, "/var/www/#{application}-staging"
+  set :deploy_to, "/var/www/staging.#{application}.com"
   set :branch, "staging"
 end
 
 task :production do
-  set :deploy_to, "/var/www/#{application}"
+  set :deploy_to, "/var/www/#{application}.com"
   set :branch, "master"
 end
 

@@ -5,6 +5,7 @@
 */
 ul#main-menu{
 	overflow:auto;
+	width:100%;  /* IE6 */
 	background:#060405 url('/images/embed/menu.png') repeat-x;
 	font: normal normal bold 14px arial, sans-serif;
 	}
