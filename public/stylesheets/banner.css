@@ -1,6 +1,6 @@
 #banner{
 	position:relative;
-	background:#060405 url() no-repeat top right;
+	background:#000 url('/images/banners/default.jpg') no-repeat top right;
 	height:210px;
 	border-bottom:5px solid #fdd636;
 	}

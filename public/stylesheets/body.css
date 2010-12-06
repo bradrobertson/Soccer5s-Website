@@ -15,15 +15,11 @@
 		width:310px;
 		color:#5a5a5a;
 		}
-		#sidebar p{
-			margin:10px 0;
-			font-size:12px;
-			}
-			#sidebar p a{
-				color:#5a5a5a;
-				font-weight:bold;
-				font-style:italic;
-			}
-			#sidebar p img{
-				margin-top:20px;
-			}
+		#sidebar p a{
+			color:#5a5a5a;
+			font-weight:bold;
+			font-style:italic;
+		}
+		#sidebar p img{
+			margin-top:20px;
+		}

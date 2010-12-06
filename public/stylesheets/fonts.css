@@ -26,3 +26,14 @@ body h2{
 		font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
 		font-size:30px;
 }
+
+h3{
+	font-size:16px;
+	font-weight:bold;
+	margin:5px 0;
+}
+
+p{
+	margin:10px 0;
+	font-size:12px;
+}
