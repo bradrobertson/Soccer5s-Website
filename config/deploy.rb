@@ -38,5 +38,5 @@ namespace :deploy do
     run "touch #{current_release}/tmp/restart.txt"
   end
   
-  before "deploy:restart", "deploy:migrate"
+  after "deploy:symlink", "deploy:migrate"
 end
