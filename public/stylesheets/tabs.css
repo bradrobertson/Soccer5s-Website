@@ -23,6 +23,6 @@ ul.tabs{
 
 div.panes{
 	padding:30px;
-	height:400px;
+	min-height:400px;
 	background:#ebebeb url('/images/embed/body.png') repeat-x top;
 }

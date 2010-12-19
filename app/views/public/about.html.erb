@@ -1,3 +1,7 @@
+<% content_for :slogan do %>
+  <%= render :partial => '/shared/std_slogan' %>
+<% end %>
+
 <% content_for :banner do %>
   <h2 id="title">About Us</h2>
 <% end %>
@@ -9,7 +13,6 @@
   <p><a href="http://www.foxsoccershop.com">www.foxsoccershop.com</a> - buy you soccer gear here and get a 25% discount</p>
   <p><a href="http://www.diadora.com.au">www.diadora.com.au</a> - buy you soccer gear here and get a 25% discount</p>
   <p><%= image_tag 'ad.jpg' %></p>
-  
 <% end %>
 
 
@@ -19,7 +22,14 @@
   </ul>
   
   <div class="panes">
-    <div><h2>About Soccer 5s - History</h2></div>
+    <div>
+      <h2>About Soccer 5s - History</h2>
+      <%= image_tag 'about.jpg', :class =>'page-body' %>
+      <p>Why do you join a gym? You join because you’re not happy with something – usually your weight, your lack of muscle tone, your fitness or your lack of muscles. You join a gym to get results! At Soccer 5s gyms we understand that you want results – and that you don’t want to pay a fortune to get them! Soccer 5s gyms are equipped with everything you need to be on top of your game. Our quality apparatus will test you to your limit - and give you a run for your money</p>
+      <p class="clear">Why do you join a gym? You join because you’re not happy with something – usually your weight, your lack of muscle tone, your fitness or your lack of muscles. You join a gym to get results! At Soccer 5s gyms we understand that you want results – and that you don’t want to pay a fortune to get them!</p>
+      <p>Soccer 5s gyms are equipped with everything you need to be on top of your game. Our quality apparatus will test you to your limit - and give you a run for your money.</p>
+      <p>With Powerleague there are so many ways to keep super fit.</p>
+    </div>
   </div>
   
 </div>

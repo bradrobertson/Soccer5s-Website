@@ -1,19 +1,24 @@
 #body{
-	height:600px;
 	background:#ebebeb;
 	}
 	#main{
-		margin-right:311px;
-	}
-	* html #main{
-		margin-right:300px;
-	}
+		margin-right:310px;
+		border-right:1px solid #cecece;
+		}
+		img.page-body{
+			border:1px solid #d7d7d7;
+			float:left;
+			margin:10px 20px 10px 0;
+		}
+		p.clear{clear:left;}
+	* html #main{margin-right:300px;}
+	
 	#sidebar{
-		border-left:1px solid #cecece;
 		float:right;
 		height:100%;
 		width:310px;
 		color:#5a5a5a;
+		line-height:110%;
 		}
 		#sidebar p a{
 			color:#5a5a5a;

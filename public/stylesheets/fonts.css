@@ -14,17 +14,27 @@
 	font-style: normal;
 }
 
+body h1{
+	color:#fff;
+	line-height:0.8em;
+	text-transform:uppercase;
+	font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
+	font-size:30px;	
+	}
+	#home h1{
+		font-size:40px;
+	}
 body h2{	
 	color:#5a5a5a;
 	text-transform:uppercase;
 	font-family: 'HelveticaNeueLTStd87HeavyCond', helvetica, arial, sans-serif;
 	font-size:25px;
-	}
+}
 
-	h2#title{
-		color:#fdd716;
-		font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
-		font-size:30px;
+h2#title{
+	color:#fdd716;
+	font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
+	font-size:30px;
 }
 
 h3{
@@ -36,4 +46,28 @@ h3{
 p{
 	margin:10px 0;
 	font-size:12px;
+	line-height:1.5em;
+}
+
+#slogan p{
+	color:#fff;
+	margin:0;
+	font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
+	font-size:21px;
+	text-transform: uppercase;
+	}
+	#slogan p span{
+		color:#fdd716;
+	}
+
+#home .info p{
+	color:#fff;
+	font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
+	font-size:22px;
+	line-height:0.95em;
+	margin:0;
+	}
+	#home .info p.notice{
+		font-size:30px;
+		color:#fdd716;
 }

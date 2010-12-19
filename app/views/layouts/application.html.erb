@@ -12,8 +12,13 @@
     
     <div id="banner">
       <div id="logo"><img src="/images/logos/white-trans.png" alt="logo" /></div>
+      <%= content_for :slogan %>
       <%= content_for :banner %>
     </div>
+    
+    <% if content_for? :carousel %>
+    <div id="carousel"></div>
+    <% end %>
     
     <div id="body">
       <% if content_for? :sidebar %>

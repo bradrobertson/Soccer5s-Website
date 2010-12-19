@@ -12,3 +12,15 @@
 		bottom:30px;
 		left:30px;
 	}
+	#slogan{
+		position:absolute;
+		right:0;
+		bottom:30px;
+		width:315px;
+		background:url('/images/embed/slogan-bg-std.png') no-repeat center right;
+	}
+	#slogan.enhanced{
+		bottom:auto;
+		top:140px;
+		background:url('/images/embed/slogan-bg-enhanced.png') no-repeat bottom right;
+	}
