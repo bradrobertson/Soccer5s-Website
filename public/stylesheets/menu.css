@@ -15,7 +15,7 @@ ul#main-menu{
 		border-left:1px solid #fee460;
 		}
 		#main-menu li:first-child{border-left:0;}
-		#main-menu li:last-child, #main-menu li.last-child{border-right:0;}
+		#main-menu li:last-child, #main-menu li#contact-link{border-right:0;}
 		li#home-link{width:97px;}
 		li#what-link{width:164px;}
 		li#facility-link{width:112px;}
