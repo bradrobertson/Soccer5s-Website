@@ -7,7 +7,7 @@ Soccer5s::Application.routes.draw do
   match '/facilities', :to => 'public#facilities'
   match '/kids', :to => 'public#kids'
   match '/training', :to => 'public#training'
-  match '/leagues', :to => 'public#leagues'
+  match '/competition', :to => 'public#competition'
   match '/about', :to => 'public#about'
   match '/contact', :to => 'public#contact'
   # match '/news', :to => 'public#news'

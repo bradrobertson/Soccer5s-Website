@@ -5,7 +5,7 @@ class PublicController < ApplicationController
   def facilities; end
   def kids; end
   def training; end
-  def leagues; end
+  def competition; end
   def about; end
   def contant; end
   
