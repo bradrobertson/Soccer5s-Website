@@ -19,16 +19,17 @@ ul#main-menu{
 		li#home-link{width:97px;}
 		li#what-link{width:164px;}
 		li#facility-link{width:112px;}
-		li#kids-link{width:133px;}
-		li#training-link{width:106px;}
-		li#competition-link{width:108px;}
-		li#about-link{width:111px;}
-		li#contact-link{width:115px;}
+		li#kids-link{width:130px;}
+		li#training-link{width:100px;}
+		li#competition-link{width:133px;}
+		li#about-link{width:105px;}
+		li#contact-link{width:105px;}
 
 		ul#main-menu li#home-link a{background-position: 75px 22px;}
 		ul#main-menu li#what-link a{background-position: 147px 22px;}
-		ul#main-menu li#kids-link a{background-position: 119px 22px;}
-		ul#main-menu li#contact-link a{background-position: 92px 22px;}
+		ul#main-menu li#kids-link a{background-position: 118px 22px;}
+		ul#main-menu li#competition-link a{background-position: 118px 22px;}
+		ul#main-menu li#contact-link a{background-position: 88px 22px;}
 
 		#main-menu a{
 			display:block;
