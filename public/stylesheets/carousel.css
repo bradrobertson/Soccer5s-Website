@@ -1,7 +1,7 @@
 #carousel{
   position:relative;
 	height:200px;
-	background:#000 url('/images/carousel/bg.png') no-repeat bottom right;
+	background:#000 url('/images/embed/carousel-bg.png') no-repeat bottom right;
 	}
 	.scrollable {
 		position:relative;
