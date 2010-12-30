@@ -14,8 +14,14 @@ ul#main-menu{
 		border-right:1px solid #bca21e;
 		border-left:1px solid #fee460;
 		}
-		#main-menu li:first-child{border-left:0;}
-		#main-menu li:last-child, #main-menu li#contact-link{border-right:0;}
+    /*
+    *   Ideally we'd use :first-child, :last-child here but IE7 sucks
+    *   And the IE9 js causes a flash of menu content
+    *
+    */
+		#main-menu li#home-link{border-left:0;}
+		#main-menu li#contact-link{border-right:0;}
+		
 		li#home-link{width:97px;}
 		li#what-link{width:164px;}
 		li#facility-link{width:112px;}
