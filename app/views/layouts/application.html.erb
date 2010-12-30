@@ -17,7 +17,20 @@
     </div>
     
     <% if content_for? :carousel %>
-    <div id="carousel"></div>
+      <div id="carousel">
+        
+        <div class="navi">
+          <a href="#first" class="active">1</a>
+          <a href="#second">2</a>
+          <a href="#third">3</a>
+        </div>
+        
+        <a class="prev browse">Previous</a>
+        <div class="scrollable">
+          <%= content_for :carousel %>
+        </div>
+        <a class="next browse">Next</a>
+      </div>
     <% end %>
     
     <div id="body">

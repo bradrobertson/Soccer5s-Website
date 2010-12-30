@@ -11,7 +11,20 @@
 <% end %>
 
 <% content_for :carousel do %>
-  <p>Carousel</p>
+  <div class="items">
+    <div class="page">
+      <%= image_tag 'carousel/what.jpg' %>
+      <h2>What is 5-a-side</h2>
+    </div>
+		<div class="page">
+		  <%= image_tag 'carousel/kids.jpg' %>
+		  <h2>Kids Parties</h2>
+		</div>
+		<div class="page">
+		  <%= image_tag 'carousel/facilities.jpg' %>
+		  <h2>Facilities</h2>
+		</div>
+  </div>
 <% end %>
 
 <div id="home-body">

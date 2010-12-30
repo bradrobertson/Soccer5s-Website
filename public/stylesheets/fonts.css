@@ -71,3 +71,9 @@ p{
 		font-size:30px;
 		color:#fdd716;
 }
+
+#carousel h2{
+  color:#fff;
+  font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
+  margin-top:20px;
+}
