@@ -16,6 +16,7 @@
     position:absolute;
     right:20px;
     top:20px;
+    z-index:9999;     /* Not sure how the z-index works here but I needed to up it in order to make these clickable */
     }
     .navi a{
       display:block;
@@ -44,7 +45,16 @@
       float:left;
       margin-right:20px;
     }
-  a.browse{
+    .page-number{
+      float:right;
+      bottom:0;
+      color:#000;
+      font-size:25px;
+      font-weight:bold;
+      margin-right:5px;
+      margin-top:160px;
+    }
+  button.browse{
     position:absolute;
     text-indent:-9999em;
     top:50%;
@@ -52,7 +62,9 @@
     display:block;
     width:32px;
     height:43px;
-    background:transparent url() no-repeat center center;
+    background-repeat: no-repeat;
+    border:0;
+    cursor:pointer;
     }
     .browse.prev{
       left:-32px;

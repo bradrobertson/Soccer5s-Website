@@ -17,7 +17,7 @@ stylesheets:
     - public/stylesheets/carousel.css    
     - public/stylesheets/footer.css
     - public/stylesheets/tabs.css
-    - public/stylesheets/ie6.css
+    - public/stylesheets/form.css
     - public/stylesheets/home.css
     - public/stylesheets/about.css
-    
+    - public/stylesheets/ie6.css

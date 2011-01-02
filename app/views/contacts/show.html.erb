@@ -1,0 +1,16 @@
+<% content_for :slogan do %>
+  <%= render :partial => '/shared/std_slogan' %>
+<% end %>
+
+<% content_for :banner do %>
+  <%= render :partial => 'contact_title' %>
+<% end %>
+
+<% content_for :sidebar do %>
+  <%= render :partial => 'contact_sidebar' %>
+<% end %>
+
+<%= render :layout => 'contact' do %>
+  <h2>We have received your submission</h2>
+  <p>Thank you for your interest in Soccer5s.  We will blah blah</p>
+<% end %>

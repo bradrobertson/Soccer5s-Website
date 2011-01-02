@@ -7,6 +7,5 @@ class PublicController < ApplicationController
   def training; end
   def competition; end
   def about; end
-  def contant; end
   
 end

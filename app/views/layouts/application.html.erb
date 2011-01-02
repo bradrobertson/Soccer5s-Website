@@ -6,7 +6,7 @@
   <%= include_stylesheets :soccer5s %>
   <%= csrf_meta_tag %>
 </head>
-<body id="<%= page %>">
+<body id="<%= page %>" class="<%= section %>">
   <div id="content">
     <%= render :partial => 'shared/main_menu' %>
     
@@ -25,11 +25,11 @@
           <a href="#third">3</a>
         </div>
         
-        <a class="prev browse">Previous</a>
+        <button class="prev browse">Previous</button>
         <div class="scrollable">
           <%= content_for :carousel %>
         </div>
-        <a class="next browse">Next</a>
+        <button class="next browse">Next</button>
       </div>
     <% end %>
     

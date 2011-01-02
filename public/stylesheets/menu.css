@@ -59,7 +59,7 @@ ul#main-menu{
 #training li#training-link,	
 #competition li#competition-link,
 #about li#about-link,
-#contact li#contact-link{
+#new.contacts li#contact-link{
 	background-color:#000;
 	border-left:1px solid #000;
 }
@@ -72,7 +72,7 @@ ul#main-menu{
 #training li#training-link a,	
 #competition li#competition-link a,
 #about li#about-link a,
-#contact li#contact-link a{
+#new.contacts li#contact-link a{
 	color:#fdd716;
 	background:transparent url('/images/embed/menu-bullet-on.png') no-repeat 90% 22px;
 }

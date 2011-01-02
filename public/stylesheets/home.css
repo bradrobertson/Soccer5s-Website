@@ -32,3 +32,21 @@
 	padding:20px;
 	overflow:auto;
 }
+
+.col{
+  float:left;
+  width:275px;
+  color:#fff;
+  margin-right:20px;
+  }
+  .col ul{
+    margin:10px;
+    }
+    .col li{
+      font-size:12px;
+      list-style-type:disc;
+      color:#fdd716;
+      }
+      .col li span{
+        color:#fff;
+}
