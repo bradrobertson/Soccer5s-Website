@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     
     if @contact.save
-      redirect_to contact_path
+      redirect_to contact_path(:anchor => 'form')
     else
       render :action => 'new'
     end

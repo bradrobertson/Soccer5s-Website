@@ -47,6 +47,10 @@
       list-style-type:disc;
       color:#fdd716;
       }
-      .col li span{
+      .col li span,
+      .col li a{
         color:#fff;
+      }
+      .col li a{
+        text-decoration:underline;
 }

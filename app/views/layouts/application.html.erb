@@ -3,6 +3,12 @@
 <head>
   <title>Soccer5s</title>
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-19297403-1']);
+    _gaq.push(['_trackPageview']);
+  </script>
+  
   <%= include_stylesheets :soccer5s %>
   <%= csrf_meta_tag %>
 </head>
@@ -55,11 +61,8 @@
 
 <%= javascript_include_tag 'http://cdn.jquerytools.org/1.2.5/jquery.tools.min.js' %>
 <%= include_javascripts :soccer5s %>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-19297403-1']);
-  _gaq.push(['_trackPageview']);
 
+<script type="text/javascript">
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';

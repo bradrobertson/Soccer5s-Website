@@ -14,7 +14,7 @@
   <h2>Use the Form Below for Any Enquiries</h2>
   <p>Soccer 5s action is not just limited to adults – we also provide junior 5-a-side football leagues, kids football coaching and football camps as well as fun packed football parties. Speaking of parties, if you need to hire rooms for a private function / party we have fantastic licensed function rooms for use suitable for every occasion so contact your local centre to check availability.</p>
 
-  <%= simple_form_for @contact, :url => contact_path do |f| %>
+  <%= simple_form_for @contact, :url => contact_path(:anchor => 'form') do |f| %>
     <%= f.input :name, :label => "Your Name <span>(required)</span>".html_safe, :required => false, :error => false %>
     <%= f.input :email, :label => "Email Address <span>(required)</span>".html_safe, :required => false, :error => false %>
     <%= f.input :telephone, :label => "Telephone number" %>

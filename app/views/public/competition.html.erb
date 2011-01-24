@@ -17,14 +17,83 @@
 
 <div id="main">
   <ul class="tabs">
-    <li><%= link_to "Competition", "#" %></li>
+    <li><%= link_to "Leagues", "#leagues" %></li>
+    <li><%= link_to "Cups", "#cups" %></li>
+    <li><%= link_to "Interstate", "#interstate" %></li>
+    <li><%= link_to "Rules", "#rules" %></li>
   </ul>
   
   <div class="panes">
-    <div>
-      <h2>Competition</h2>
-      <p>Soccer5s provide leagues for any gender, age group and skill level. Soccer5s can arrange bounce games to place your team at a level you will be comfortable at. Leagues run all year round on 3 month blocks with automatic promotion for champions and finals at the end of the season.</p>
-      <p>To join leagues and register your interest please click the link below</p>
+    
+    <div class="leageus">
+      <h2>Leagues</h2>
+      <p>Be the best! Wear your favourite teams strip or your own team colours. Battle your way to the top!</p>
+      <p>Leagues commence every 3 months with promotion, relegation and championship play offs . Leagues are tailored for all levels of ability and players. We also have different format leagues such as Men’s, Ladies, Youth, Over 35’s and Mixed Sex. Leagues are set at varied times during the week.</p>
+      <p><%= link_to 'Contact', new_contact_path %> Soccer5s for more information on how to register your team.</p>
+      <p class="quote">'Join the League – Live the dream'</p>
+    </div>
+    
+    <div class="cups">
+      <h2>Cups</h2>
+      <p>Can’t commit to a league format, play in one of our cup competitions. Cups will run at varied times throughout the year. Enquire to Soccer5s for our latest information about up coming cup competitions. Soccer5s can also design a one off knockput competition for your needs so contact us to find out more.</p>
+      <p class="quote">'Remember an underdog CAN have its day!'</p>
+    </div>
+    
+    <div class="interstate">
+      <h2>Interstate</h2>
+      <p>Winners of Soccer5s competitions in time may get the opportunity to qualify for any regional and interstate tournaments within the Soccer5s  future network.</p>
+      <P>Do you have what it takes to get to the Grand Final and be crowned Australian Champions?</p>
+    </div>
+    
+    <div class="rules">
+      <h2>Rules</h2>
+      <p>All players must be registered to play in Soccer5s leagues. Teams can register squads up to 20 players per season. Players can only be registered to one team in an individual league set up.</p>
+      <p>Teams will receive 3 points for a win, 1 for a draw and zero for a loss. League placing will be decided by points gained, followed by goal difference, followed by goals scored, followed by the aggregate result between the two teams in question.</p>
+      <p>For League matches a maximum of eight players per game may be used. All players must be named on the team sheet prior to kick off.</p>
+      <p>Teams who play an unregistered or suspended player will automatically lose the match 10 – 0. A suspended player will still have to serve his suspension even though the team has been punished this match will not count as a match which the player has missed.</p>
+      <p>Teams are asked to arrive 15 minutes prior to appointed kick off times.</p>
+      <p>Teams must be on the pitch and ready to begin the match at the appointed kick-off time. If a team is 5 minutes late they will start the match a goal down. For every 5 mins after the the initial 5 minutes 3 goals will be added on until 20 minutes late. At this stage the match will be awarded 10 – 0.</p>
+      <p>Teams may be replaced at any stage of the season. Replacement teams inherit the scores and points of their predecessors. No team joining after the halfway point can be awarded first or second place at the end of the season.</p>
+      <p>Teams failing to appear for their designated fixture or not giving notice the day before of cancellation, will have the match awarded to their opponents 10 – 0, for repeated absence the team may be removed from the League. The offending team will be due to pay for both their match fees and their opponents match fees.</p>
+      <p>In the event that a team refuses to play another team the match will be awarded to the other team 10 – 0.</p>
+      <p>In the event that a team refuses to complete a match that has already started, the match will be awarded to the other team 10 – 0. If the score at the time produces a goal difference greater than 10-0 then that score will stand.</p>
+      <p>Soccer5s pitches are all weather pitches. Games will be played at all times and weather conditions unless adverse weather conditions make the pitches unplayable. Any decision to cancel a game can only be made by Soccer5s management. Postponements are not allowed, except in exceptional circumstances and at the discretion of Soccer5s management.</p>
+      <p>Match Schedules will be listed list at the start of each season and will be posted on the Company’s website www.soccer5s.com. Each team captain will have log in details to access the teams individual account and all players can use the website to see future schdules.  All league results will be displayed at the centre on notice boards and the website, but Soccer5s will not accept any responsibility for any omissions from or inaccuracies in any such fixture lists and/or results. Soccer5s will attempt to resolve any issues arising.</p>
+
+      <p>PLAYING RULES</p>
+      <p>For matches a team may field four outfield players and a goalkeeper on the pitch at any one time. Teams can only use a maximum of 8 players in each individual game.</p>
+      <p>Substitutions are unlimited during the game, can only be made when the ball is dead and only with the Referees consent. Outgoing substitutes must leave the field of play before the replacement enters the playing area. Substitutes must stand outside the pitch perimeter and spectators must not enter the field of play under any circumstances.</p>
+      <p>Teams can change their goalkeeper during the game but only when the ball is dead and the referee must be notified.</p>
+      <p>Screw in studded footwear or blades are NOT permitted to be worn by any player at any point in Soccer5s Centres. Only training shoes, moulded soles and astro boots may be worn. </p>
+      <p>All Players must wear shin pads.</p>
+      <p>The wearing of any form of jewelry (including, without limitation, watches) is not permitted during play. </p>
+      <p>Referees may refuse to allow players to play with inappropriate footwear, without shin pads and/or are wearing any form of jewelry.</p>
+      <p>The match will consist of two equal halves. The length of half will be determined by Soccer5s.</p>
+      <p>The first half will begin with one team kicking off from the centre; the second half will begin with the other team kicking off from the centre. After a goal has been scored the game will be re-started by the team who conceded the goal kicking off from the centre.</p>
+      <p>Only the defending goalkeeper is allowed to play the ball inside the goal area and only he may handle the ball in this area.</p>
+      <p>A goalkeeper gaining or seeking to gain an advantage by leaving his area or by playing the ball when it is outside the area will have a penalty awarded against his team.</p>
+      <p>An outfield player gaining or seeking to gain an advantage by entering his own goal area will have a penalty kick awarded against his team.</p>
+      <p>An outfield player entering his opponent’s penalty area will be penalized. The game will be re-started from the goalkeeper.</p>
+      <p>The goalkeeper can return the ball into play by throwing it or kicking it. </p>
+      <p>The first player to receive the ball from his goalkeeper cannot pass it back to the goalkeeper. A free kick will be awarded against the offending team from the place where the player who received the ball from the goalkeeper was before they returned the ball the goalkeeper.</p>
+      <p>If the ball goes out of play off the goalkeeper, the game will be restarted by indirect free kick by the same goalkeeper.</p>
+      <p>No slide tackles are allowed. Infringement of this rule will lead to a free kick being awarded against the offending players’ team, the player who committed the foul will receive an automatic yellow.</p>
+      <p>If the last defending player commits a foul the team will be penalized with a penalty and the player who committed the foul will receive a red card.</p>
+      <p>All free kicks will be direct.</p>
+      <p>Opposition players must be at least two meters from where any freekick is taken. If opposing players do not retreat the required two meters they may receive a yellow card. Free Kicks less than 2 metres from the goal area of the opposition team will be moved back to the 2 metre mark to allow opposition defenders an opportunity to defend.</p>
+      <p>The Goalkeeper must be on the goal line when a penalty is being taken. Players may only take one step whilst taking a penalty.</p>
+      <p>These League Rules are not exhaustive and may be added to or amended at any time.</p>
+      <p>The Referees decision on all on-field matters is final and no discussions will be entered into either on or off the field with him about any decision. The Referees jurisdiction on disciplinary matters will apply until players have entered the changing rooms. Players repeatedly disputing decisions may have further disciplinary action taken against them.</p>
+      <p>Teams with a valid complaint against a match official must be put in writing within 48 hours of the said match. The complaint should be addressed to Soccer5s Centre Management, who will make a decision. This decision is final. </p>
+      <p>A player sent off for a second offence will be suspended for a minimum of 1 WEEK. In the case serious foul play, foul or abusive language the suspension will be extended to 2 WEEKS or longer should Soccer5s deem this necessary. </p>
+      <p>If a player is given a red card whilst off the field of play (for unacceptable conduct on the sideline), the team must correspondingly reduce the number of players on the field.</p>
+      <p>If a team is 3 players or less for any reason the match will end. The result will be awarded 10-0 to their opponents. If the score at the time produces a goal difference greater than 10-0 then that score will stand. </p>
+      <p>If a match is abandoned for any reason the team at fault will receive a 10-0 defeat unless the opposing team already has a greater advantage in which case the score will stand. If both teams are judged to be at fault the game will be void and both teams will be deducted 5 points.</p>
+      <p>Violent conduct on or off the pitch will result in the immediate suspension of the individual and could result in a ban from all Soccer5s premises. Soccer5s reserve the right to ban an individual or team from further participation in any or all activities within Soccer5s. Any teams found not cooperating with Soccer5s or attempting to deceive could be removed from the league program.</p>
+      <p>Referees must be treated with respect from all teams. Teams found guilty of abusing Referees will be removed from the Leagues, as will Teams in material or persistent breach of these Rules.</p>
+      <p>The decision of Soccer5s management in all matters pertaining to the administration of the league is final.</p>
+      <p>Soccer5s reserves the right to alter the rules and punish accordingly if teams or individual players are attempting to gain unfair advantage by using an interpretation of rules set by Soccer5s</p>
+      </p>
     </div>
   </div>
   

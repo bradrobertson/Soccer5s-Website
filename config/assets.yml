@@ -2,8 +2,9 @@ embed_assets: datauri
 
 javascripts:
   soccer5s:
-    - public/javascripts/scrollable.autoscroll.js
-    - public/javascripts/scrollable.navigator.js
+    - public/javascripts/jquery.tools.history.js
+    - public/javascripts/jquery.tools.scrollable.autoscroll.js
+    - public/javascripts/jquery.tools.scrollable.navigator.js
     - public/javascripts/application.js
 
 stylesheets:

@@ -17,26 +17,28 @@
       <%= image_tag 'carousel/what.jpg' %>
       <h2>What is <span>5-a-side</span></h2>
       <div class="col">
-        <p>Five a side football is a phenomenon which began and Scotland and took over in the UK as the highest regular participation sport for men aged 18-50.</p>        
+        <p>Five a side football is a phenomenon which began and Scotland and took over in the UK as the highest regular participation sport for soccer players.</p>        
       </div>
       <div class="col">
         <p>
-        This game is fast, furious and fun. This game allows players to develop ball control and tactical awareness, it can be played by people of varying skill set. You can play anyway you want leagues, tournaments, casual games and even club training.</p>
+        This game is fast, fun and contagious. This game allows players to develop ball control and tactical awareness, it can be played by people of varying skill set. You can play anyway you want leagues, tournaments, casual games and even club training.</p>
       </div>
     </div>
 		<div class="page">
 		  <p class="page-number">02</p>
 		  <%= image_tag 'carousel/kids.jpg' %>
-		  <h2>Kids <span>Parties</span></h2>
+		  <h2>Events</h2>
+		  
 		  <div class="col">
 		    <p>Packages can be styled to suit each parties individual needs.</p>
 		  </div>
+		  
 		  <div class="col">
 		    <ul>
-		      <li><span>Some Bullet point</span></li>
-		      <li><span>Some Bullet point</span></li>
-		      <li><span>Some Bullet point</span></li>
-		      <li><span>Some Bullet point</span></li>
+		      <li><span><%= link_to "Kids Parties", events_path(:anchor => 'kids') %></span></li>
+		      <li><span><%= link_to "Corporate/ Team Building Events", events_path(:anchor => 'corporate' ) %></span></li>
+		      <li><span><%= link_to "Social Events", events_path(:anchor => 'social' ) %></span></li>
+		      <li><span><%= link_to "Tournaments", events_path(:anchor => 'tournaments' ) %></span></li>
 		  </div>
 		</div>
 		<div class="page">
@@ -44,17 +46,23 @@
 		  <%= image_tag 'carousel/facilities.jpg' %>
 		  <h2>Facilities</h2>
 		  <div class="col">
+		    <p>We have 8 All Weather Five a Side Pitches and 2 All Weather Seven a Side Pitches</p>
 		  </div>
 		  <div class="col">
+		    <ul>
+		      <li><span><%= link_to "EPL standard Changing Rooms", facilities_path(:anchor => 'rooms') %></span></li>
+		      <li><span><%= link_to "Sports Bar", facilities_path(:anchor => 'bar') %></span></li>
+		      <li><span><%= link_to "Five a Side specific Astroturf", facilities_path(:anchor => 'astroturf') %></span></li>
+		    </ul>
 		  </div>
 		</div>
   </div>
 <% end %>
 
-<div id="home-body">
+<!-- <div id="home-body">
   <%= image_tag '/images/about.jpg', :class => 'page-body', :style => 'float:right;margin-top:0;margin-left:10px'%>
   <h2>Welcome to Soccer 5S</h2>
-  <p>Five a side football is a phenomenon which began and Scotland and took over in the UK as the highest regular participation sport for men aged 18-50.</p>
-  <p>This game is fast, furious and fun. This game allows players to develop ball control and tactical awareness, it can be played by people of varying skill set. You can play anyway you want leagues, tournaments, casual games and even club training.</p>
+  <p>Five a side football is a phenomenon which began and Scotland and took over in the UK as the highest regular participation sport for sport for soccer players.</p>
+  <p>This game is fast, fun and contagious. This game allows players to develop ball control and tactical awareness, it can be played by people of varying skill set. You can play anyway you want leagues, tournaments, casual games and even club training.</p>
   <p>Soccer5s are committed to providing Australians with an incredible sporting experience.</p>
-</div>
+</div> -->

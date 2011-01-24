@@ -5,7 +5,7 @@ Soccer5s::Application.routes.draw do
   root :to => "public#home"
   match '/what', :to => 'public#what'
   match '/facilities', :to => 'public#facilities'
-  match '/kids', :to => 'public#kids'
+  match '/events', :to => 'public#events'
   match '/training', :to => 'public#training'
   match '/competition', :to => 'public#competition'
   match '/about', :to => 'public#about'

@@ -3,7 +3,7 @@ class PublicController < ApplicationController
   def home; end  
   def what; end
   def facilities; end
-  def kids; end
+  def events; end
   def training; end
   def competition; end
   def about; end

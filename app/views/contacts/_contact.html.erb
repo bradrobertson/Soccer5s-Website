@@ -1,16 +1,22 @@
 <div id="main">
   <ul class="tabs">
-    <li><%= link_to "Contact Form", "#" %></li>
-    <li><%= link_to "Location Map", "#" %></li>
+    <li><%= link_to "Register Interest", "#interest" %></li>
+    <li><%= link_to "Contact Form", "#form" %></li>
+    <li><%= link_to "Location Map", "#map" %></li>
   </ul>
   
   <div class="panes">
     <div>
+      <h2>Register Interest</h2>
+    </div>
+    
+    <div>
       <%= yield %>
     </div>
+    
     <div>
       <h2>Map</h2><br />
-      <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Wyong+Rd,+Melbourne+VIC,+Australia&amp;sll=-37.734425,144.865937&amp;sspn=0.010793,0.020041&amp;ie=UTF8&amp;hq=&amp;hnear=Wyong+St,+Melbourne+Victoria+3033,+Australia&amp;ll=-37.725855,144.871645&amp;spn=0.023557,0.042915&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.ca/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Wyong+Rd,+Melbourne+VIC,+Australia&amp;sll=-37.734425,144.865937&amp;sspn=0.010793,0.020041&amp;ie=UTF8&amp;hq=&amp;hnear=Wyong+St,+Melbourne+Victoria+3033,+Australia&amp;ll=-37.725855,144.871645&amp;spn=0.023557,0.042915&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small>
+      <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Club+Tuggerah,+Bryant+Drive,+Tuggerah+&amp;aq=&amp;sll=-25.335448,135.745076&amp;sspn=49.716039,82.353516&amp;ie=UTF8&amp;hq=Club+Tuggerah,&amp;hnear=Bryant+Dr,+Tuggerah+New+South+Wales+2259&amp;ll=-33.30998,151.422908&amp;spn=0.006223,0.009141&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com.au/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Club+Tuggerah,+Bryant+Drive,+Tuggerah+&amp;aq=&amp;sll=-25.335448,135.745076&amp;sspn=49.716039,82.353516&amp;ie=UTF8&amp;hq=Club+Tuggerah,&amp;hnear=Bryant+Dr,+Tuggerah+New+South+Wales+2259&amp;ll=-33.30998,151.422908&amp;spn=0.006223,0.009141&amp;z=16&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
     </div>
   </div>
 
