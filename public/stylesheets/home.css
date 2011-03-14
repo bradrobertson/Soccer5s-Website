@@ -1,6 +1,6 @@
 #home #banner{
 	height:413px;
-	background-image:url('/images/banners/home.jpg');
+	background-image:url('/images/banners/banner-1.jpg');
 	background-position:left;
 	}
 
@@ -28,9 +28,12 @@
 		filter:alpha(opacity=60);			/* IE */
 	}
 
-#home-body{
-	padding:20px;
-	overflow:auto;
+#home #body,
+#home .panes{
+  background-image:none;
+  }
+  #home .panes{
+  	padding:20px;
 }
 
 .col{

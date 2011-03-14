@@ -61,9 +61,17 @@
   </div>
 <% end %>
 
-<div id="home-body">
-  <%= image_tag '/images/about.jpg', :class => 'page-body', :style => 'float:right;margin-top:0;margin-left:10px'%>
-  <h2>SOCCER 5S AUSTRALIA - OPENING JULY 2011</h2>
-  <p>Soccer 5s action is not just limited to adults – we also provide junior 5-a-side football leagues, kids football coaching and football camps as well as fun packed football parties. Speaking of parties, if you need to hire rooms for a private function / party we have fantastic licensed function rooms for use suitable for every occasion so contact your local centre to check availability.</p>
-  <p>We can provide bespoke tournament packages and can even host both your conference event and entertainment at our venues!</p>
+<div id="sidebar">
+  <div class="logos">
+    <p><%= image_tag '/images/about.jpg', :class => 'page-body' %></p>
+  </div>
+</div>
+
+<div id="main">
+  <div class="panes">
+    <h2>Soccer 5s Australia - Opening July 2011</h2>
+    <p>Soccer 5s action is not just limited to adults – we also provide junior 5-a-side football leagues, kids football coaching and football camps as well as fun packed football parties. Speaking of parties, if you need to hire rooms for a private function / party we have fantastic licensed function rooms for use suitable for every occasion so contact your local centre to check availability.</p>
+    <p>We can provide bespoke tournament packages and can even host both your conference event and entertainment at our venues!</p>
+    <p class="forward"><%= link_to '> Find out more', facilities_path %></p>
+  </div>
 </div>

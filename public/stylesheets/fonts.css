@@ -114,3 +114,11 @@ p.quote{
  font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
  font-size:12px; 
 }
+
+.forward{
+  font-weight:bold;
+  text-align:right;
+  }
+  .forward a{
+    text-decoration:none;
+  }
