@@ -17,8 +17,8 @@
   <%= simple_form_for @contact, :url => contact_path(:anchor => 'form') do |f| %>
     <%= f.input :name, :label => "Your Name <span>(required)</span>".html_safe, :required => false, :error => false %>
     <%= f.input :email, :label => "Email Address <span>(required)</span>".html_safe, :required => false, :error => false %>
-    <%= f.input :telephone, :label => "Telephone number" %>
-    <%= f.input :message, :as => :text, :label => "Your Message <span>(required)</span>".html_safe, :required => false, :error => false %>
+    <%= f.input :telephone, :label => "Telephone number <span>(optional)</span>" %>
+    <%= f.input :message, :as => :text, :label => "Your Message <span>(optional)</span>".html_safe, :required => false, :error => false %>
     <%= f.button :submit, :class => 'submit', :value => "Submit" %>
   <% end %>
 <% end %>

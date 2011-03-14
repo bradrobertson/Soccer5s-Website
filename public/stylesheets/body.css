@@ -1,9 +1,11 @@
 #body{
-	background:#ebebeb;
+  /*This is annoying, but for some reason i can't get main/body to both always be height 100% depending on who is taller*/
+	background:#ebebeb url('/images/embed/body-bg.png') repeat-y 650px center;
+	overflow:auto;
+	width:100%;
 	}
 	#main{
 		margin-right:310px;
-		border-right:1px solid #cecece;
 		}
 		img.page-body{
 			border:1px solid #d7d7d7;
@@ -25,6 +27,6 @@
 			font-weight:bold;
 			font-style:italic;
 		}
-		#sidebar p img{
-			margin-top:20px;
+		#sidebar .links p{
+		  text-align:center;
 		}
