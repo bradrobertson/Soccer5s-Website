@@ -22,7 +22,7 @@
 		left:0;
 	}
 
-	#home .info.bg{
+	#home .bg{
 		background:#000;
 		opacity:0.6;
 		filter:alpha(opacity=60);			/* IE */
@@ -53,4 +53,9 @@
       }
       .col li a{
         text-decoration:underline;
+}
+#contact_us{
+  position:absolute;
+  right:20px;
+  bottom:20px;
 }

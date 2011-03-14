@@ -1,0 +1,10 @@
+.button{
+/*  display:block;*/
+  background:#000;
+  color:#fdd716;
+  border:1px solid #fdd716;
+  text-transform:uppercase;
+  padding:10px;
+  padding-right:40px;
+  background:url('/images/embed/button.png') no-repeat center right;
+}

@@ -24,3 +24,13 @@
 		top:140px;
 		background:url('/images/embed/slogan-bg-enhanced.png') no-repeat bottom right;
 	}
+	#notice{
+	  position:absolute;
+	  right:0;
+	  top:250px;
+	  width:470px;
+	  }
+	  #notice img{
+	    float:left;
+	    padding:5px;
+	  }

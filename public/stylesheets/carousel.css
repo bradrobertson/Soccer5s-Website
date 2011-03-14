@@ -41,6 +41,7 @@
   .items .page {
     width:960px;
   	float:left;
+  	position:relative;
     }
     .page img{
       float:left;
@@ -54,6 +55,12 @@
       font-weight:bold;
       margin-right:5px;
       margin-top:160px;
+    }
+    .more{
+      position:absolute;
+      bottom:30px;
+      height:40px;
+      width:200px;
     }
   button.browse{
     position:absolute;

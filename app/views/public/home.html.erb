@@ -3,11 +3,11 @@
 <% end %>
 
 <% content_for :banner do %>
-  <div class="info bg"></div>
+  <div class="info bg"><!-- --></div>
   <div class="info">
-    <p>We Can Take Advanced Bookings Online or Call Us On</p>
-    <p class="notice">08234 1234 5678</p>
+    <p>For information on Soccer5s official kick off email <%= mail_to "info@soccer5s.com" %></p>
   </div>
+  <%= link_to 'Contact Us', new_contact_path, :class => 'button', :id => 'contact_us' %>
 <% end %>
 
 <% content_for :carousel do %>
@@ -44,6 +44,8 @@
 		<div class="page">
 		  <p class="page-number">03</p>
 		  <%= image_tag 'carousel/facilities.jpg' %>
+		  <div class="more bg"><!-- --></div>
+		  <%= link_to "Find out more >", facilities_path, :class => 'more' %>
 		  <h2>Facilities</h2>
 		  <div class="col">
 		    <p>We have 8 All Weather Five a Side Pitches and 2 All Weather Seven a Side Pitches</p>
@@ -59,10 +61,9 @@
   </div>
 <% end %>
 
-<!-- <div id="home-body">
+<div id="home-body">
   <%= image_tag '/images/about.jpg', :class => 'page-body', :style => 'float:right;margin-top:0;margin-left:10px'%>
-  <h2>Welcome to Soccer 5S</h2>
-  <p>Five a side football is a phenomenon which began and Scotland and took over in the UK as the highest regular participation sport for sport for soccer players.</p>
-  <p>This game is fast, fun and contagious. This game allows players to develop ball control and tactical awareness, it can be played by people of varying skill set. You can play anyway you want leagues, tournaments, casual games and even club training.</p>
-  <p>Soccer5s are committed to providing Australians with an incredible sporting experience.</p>
-</div> -->
+  <h2>SOCCER 5S AUSTRALIA - OPENING JULY 2011</h2>
+  <p>Soccer 5s action is not just limited to adults – we also provide junior 5-a-side football leagues, kids football coaching and football camps as well as fun packed football parties. Speaking of parties, if you need to hire rooms for a private function / party we have fantastic licensed function rooms for use suitable for every occasion so contact your local centre to check availability.</p>
+  <p>We can provide bespoke tournament packages and can even host both your conference event and entertainment at our venues!</p>
+</div>

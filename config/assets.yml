@@ -21,4 +21,5 @@ stylesheets:
     - public/stylesheets/form.css
     - public/stylesheets/home.css
     - public/stylesheets/about.css
+    - public/stylesheets/button.css
     - public/stylesheets/ie6.css
