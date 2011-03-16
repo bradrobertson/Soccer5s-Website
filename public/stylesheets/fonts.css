@@ -29,7 +29,10 @@ body h2{
 	text-transform:uppercase;
 	font-family: 'HelveticaNeueLTStd87HeavyCond', helvetica, arial, sans-serif;
 	font-size:25px;
-}
+  }
+  body h2 span.lower{
+    text-transform:lowercase;
+  }
 
 h2#title{
 	color:#fdd716;
