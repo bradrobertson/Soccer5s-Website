@@ -1,6 +1,6 @@
 class Contact < ActiveRecord::Base
   
-  validates :name, :message, :presence => true
+  validates :name, :presence => true
   validates :email, :presence => true, 
     :length => {:minimum => 3, :maximum => 254},
     :uniqueness => true,
