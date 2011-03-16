@@ -1,1 +1,7 @@
 Another user <%= @client.email %> has signed up to receive information about soccer5s.
+
+<% unless @client.message.blank? %>
+They also left a note:
+
+  <%= @client.message %>
+<% end %>
