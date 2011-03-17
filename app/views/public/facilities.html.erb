@@ -1,0 +1,26 @@
+<% content_for :slogan do %>
+  <%= render :partial => '/shared/std_slogan' %>
+<% end %>
+
+<% content_for :banner do %>
+  <h2 id="title">Facilities</h2>
+<% end %>
+
+<% content_for :sidebar do %>
+  <%= render :partial => '/shared/links' %>
+<% end %>
+
+<div id="main">
+  <ul class="tabs">
+    <li><%= link_to "Facilities", "#" %></li>
+  </ul>
+  
+  <div class="panes">
+    <div>
+      <h2>Facilities</h2>
+      <%= image_tag 'facilities.jpg' %>
+      <p>We have 8 all weather five-a-side courts and 2 all weather seven-a-side courts in Tuggerah. These pitches are constructed using specialized 3G Astroturf designed for the rigors of five-a-side football.</p>
+    </div>
+  </div>
+  
+</div>

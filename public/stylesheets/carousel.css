@@ -1,0 +1,85 @@
+#carousel{
+  position:relative;
+	height:200px;
+	background:#000 url('/images/embed/carousel-bg.png') no-repeat bottom right;
+	border-bottom:5px solid #fdd716;
+	}
+	.scrollable {
+		position:relative;
+		overflow:hidden;
+		height:100%;
+	}
+	.scrollable .items {
+  	width:20000em;
+  	position:absolute;
+  }
+  .navi{
+    position:absolute;
+    right:20px;
+    top:20px;
+    z-index:9999;     /* Not sure how the z-index works here but I needed to up it in order to make these clickable */
+    }
+    .navi a{
+      display:block;
+      font:normal normal normal 14px impact, arial, sans-serif;
+      color:#fff;
+      background:#353535;
+      border:1px solid #494949;
+      width:20px;
+      height:25px;
+      line-height:25px;
+      margin:0 5px;
+      float:left;
+      text-align:center;
+      }
+      .navi a.active{
+        color:#000;
+        background:#fdd716;
+        border-color:#fdd716;
+  }
+    
+  .items .page {
+    width:960px;
+  	float:left;
+  	position:relative;
+    }
+    .page img{
+      float:left;
+      margin-right:20px;
+    }
+    .page-number{
+      float:right;
+      bottom:0;
+      color:#000;
+      font-size:25px;
+      font-weight:bold;
+      margin-right:5px;
+      margin-top:160px;
+    }
+    .more{
+      position:absolute;
+      bottom:30px;
+      height:40px;
+      width:200px;
+    }
+  button.browse{
+    position:absolute;
+    text-indent:-9999em;
+    top:50%;
+    margin-top:-16px;
+    display:block;
+    width:32px;
+    height:43px;
+    background-repeat: no-repeat;
+    border:0;
+    cursor:pointer;
+    }
+    .browse.prev{
+      left:-32px;
+      background-image:url('/images/embed/carousel-left.png');
+    }
+    .browse.next{
+      right:-32px;
+      background-image:url('/images/embed/carousel-right.png');
+  }
+  

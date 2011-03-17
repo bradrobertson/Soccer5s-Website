@@ -1,0 +1,44 @@
+/**
+*   @file form.css
+*   Form  based styling
+*/
+form{
+  background:#f7f7f7;
+  border:1px solid #cecece;
+  padding:40px;
+  }
+  label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:2px;
+    }
+    label span{
+      font-weight:normal;
+  }
+  div.input{
+    margin-bottom:20px;
+    }
+    input.string,
+    textarea.text{
+      font-size:14px;
+      padding:4px 0 4px 4px;
+    }
+    input.string{
+      width:500px;    /* Note that width 100% doesn't work with padding :( it extends beyond container which throws out alignment */
+    }
+    textarea{
+      width:500px;
+      height:100px;
+  }
+  input.submit{
+    float:right;
+  }
+  
+  .field_with_errors input,
+  .field_with_errors textarea{
+    background:#fbe3e4;
+    border:1px solid #fbc2c4;
+  }
+  .field_with_errors label span{
+    color:#8a1f11;
+  }

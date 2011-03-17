@@ -1,0 +1,64 @@
+#home #banner{
+	height:413px;
+	background-image:url('/images/banners/banner-1.jpg');
+	background-position:left;
+	}
+
+	#home #logo{
+		padding:30px 50px 0 0;
+		text-align:right;
+		right:20px;
+	}
+	
+	#home #slogan{
+		width:400px;
+	}
+	#home .info{
+		position:absolute;
+		width:270px;
+		height:80px;
+		bottom:20px;
+		padding:10px 20px;
+		left:0;
+	}
+
+	#home .bg{
+		background:#000;
+		opacity:0.6;
+		filter:alpha(opacity=60);			/* IE */
+	}
+
+#home #body,
+#home .panes{
+  background-image:none;
+  }
+  #home .panes{
+  	padding:20px;
+}
+
+.col{
+  float:left;
+  width:275px;
+  color:#fff;
+  margin-right:20px;
+  }
+  .col ul{
+    margin:10px;
+    }
+    .col li{
+      font-size:12px;
+      list-style-type:disc;
+      color:#fdd716;
+      }
+      .col li span,
+      .col li a{
+        color:#fff;
+      }
+      .col li a{
+        text-decoration:underline;
+}
+#contact_us{
+  position:absolute;
+  right:20px;
+  bottom:20px;
+}

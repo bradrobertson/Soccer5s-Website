@@ -7,7 +7,8 @@ class ClientMailer < ActionMailer::Base
   
   def admin_email(client)
     @client = client
-    mail :to => "info@soccer5s.com", :subject => "Client Interest submitted"
+    address = Rails.env.production? ? 'info@soccer5s.com' : 'bradleyrobertson@gmail.com'
+    mail :to => address, :subject => "Client Interest submitted"
   end
   
 end

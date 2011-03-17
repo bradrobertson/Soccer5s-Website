@@ -1,0 +1,25 @@
+embed_assets: datauri
+
+javascripts:
+  soccer5s:
+    - public/javascripts/jquery.tools.history.js
+    - public/javascripts/jquery.tools.scrollable.autoscroll.js
+    - public/javascripts/jquery.tools.scrollable.navigator.js
+    - public/javascripts/application.js
+
+stylesheets:
+  soccer5s:
+    - public/stylesheets/reset.css
+    - public/stylesheets/menu.css
+    - public/stylesheets/application.css
+    - public/stylesheets/fonts.css
+    - public/stylesheets/body.css
+    - public/stylesheets/banner.css
+    - public/stylesheets/carousel.css    
+    - public/stylesheets/footer.css
+    - public/stylesheets/tabs.css
+    - public/stylesheets/form.css
+    - public/stylesheets/home.css
+    - public/stylesheets/about.css
+    - public/stylesheets/button.css
+    - public/stylesheets/ie6.css
