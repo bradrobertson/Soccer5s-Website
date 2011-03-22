@@ -10,10 +10,6 @@
 		p.clear{clear:left;}
 	* html #main{margin-right:300px;}
 	
-	.logos{
-	  overflow:auto;
-	  padding:15px;
-	}
 	span.std{
 	  float:right;
 	  margin:5px;
@@ -37,9 +33,10 @@
 			font-weight:bold;
 			font-style:italic;
 		}
-		#sidebar .logos p{
-		  text-align:center;
-		}
-		p.address{
-		  font-weight:bold;
-		}
+		#sidebar .logos{
+  	  overflow:auto;
+  	  }
+  	  #sidebar .logos p{
+  	    text-align:center;
+  	}
+      
