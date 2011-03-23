@@ -125,3 +125,11 @@ p.quote{
   .forward a{
     text-decoration:none;
   }
+  
+p strong{
+  font-weight:bold;
+  font-size:1.3em;
+}
+p.address{
+  font-weight:bold;
+}
