@@ -7,7 +7,10 @@
   <div class="info">
     <p>For information on Soccer5s official kick off email <%= mail_to "info@soccer5s.com" %></p>
   </div>
-  <%= link_to 'Contact Us', new_contact_path, :class => 'button', :id => 'contact_us' %>
+  <div id="home_links">
+    <%= link_to 'Mariners Competition', new_competition_path, :class => 'button' %>
+    <%= link_to 'Contact Us', new_contact_path, :class => 'button' %>
+  </div>
 <% end %>
 
 <% content_for :carousel do %>

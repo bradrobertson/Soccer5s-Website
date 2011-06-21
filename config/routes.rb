@@ -7,8 +7,10 @@ Soccer5s::Application.routes.draw do
   match '/facilities', :to => 'public#facilities'
   match '/events', :to => 'public#events'
   match '/training', :to => 'public#training'
-  match '/competition', :to => 'public#competition'
+  match '/competition', :to => 'public#competition', :as => 'comp'
   match '/about', :to => 'public#about'
 
   resource :contact, :only => [:new, :show, :create]
+  resources :competitions
+  
 end

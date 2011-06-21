@@ -22,6 +22,7 @@ form{
     textarea.text{
       font-size:14px;
       padding:4px 0 4px 4px;
+      border:1px solid #ccc;
     }
     input.string{
       width:500px;    /* Note that width 100% doesn't work with padding :( it extends beyond container which throws out alignment */

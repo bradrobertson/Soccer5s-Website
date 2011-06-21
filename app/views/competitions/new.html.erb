@@ -1,0 +1,22 @@
+<% content_for :slogan do %>
+  <%= render :partial => '/shared/std_slogan' %>
+<% end %>
+
+<% content_for :banner do %>
+  <h2 id="title">Mariner's Competition</h2>
+<% end %>
+
+<div id="main">
+  <ul class="tabs">
+    <li><%= link_to "Mariner's Competition", "#competition" %></li>
+  </ul>
+  
+  <div class="panes">
+    
+    <div class="competition">
+      <h2>Mariner's Competition</h2>
+      <p>Put some explanation here!!!</p>
+      <%= render 'form' %>
+    </div>
+  </div>
+</div>

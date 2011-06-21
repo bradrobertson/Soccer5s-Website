@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.5'
 
 group :development, :test do
-	gem 'rspec-rails', '~> 2.0.1'
+	gem 'rspec-rails', '~> 2.6.1'
 	gem 'database_cleaner', '0.5.2'
 	gem 'factory_girl'	
 	gem 'sqlite3-ruby', :require => 'sqlite3'

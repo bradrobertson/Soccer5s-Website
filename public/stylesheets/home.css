@@ -60,7 +60,8 @@
       .col li a{
         text-decoration:underline;
 }
-#contact_us{
+
+#home_links{
   position:absolute;
   right:20px;
   bottom:20px;

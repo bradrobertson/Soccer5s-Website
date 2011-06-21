@@ -28,8 +28,9 @@ module Soccer5s
 
     
     config.generators do |g|
-      g.test_framework :rspec, :fixture => true, :views => false
+      g.test_framework :rspec, :fixture => true, :views => false, :helpers => false
       g.fixture_replacement :factory_girl, :dir => "spec/factories"
+      g.form_builder :simple_form
     end
     
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.

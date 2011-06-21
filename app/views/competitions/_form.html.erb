@@ -1,0 +1,11 @@
+<%= simple_form_for(@competition) do |f| %>
+  <%= f.input :name, :label => "Your Name <span>(required)</span>".html_safe, :required => false %>
+  <%= f.input :email, :label => "Email Address <span>(required)</span>".html_safe, :required => false %>
+  <%= f.input :telephone, :label => "Telephone number <span>(optional)</span>" %>
+  
+  <%= f.input :team_name, :label => "Team Name <span>(optional)</span>" %>
+  <%= f.input :favorite_mariner, :label => "Favorite Mariner <span>(optional)</span>" %>
+  <%= f.input :comments, :as => :text, :label => "Comments <span>(optional)</span>".html_safe, :required => false, :error => false %>
+
+  <%= f.button :submit, :class => 'submit', :value => "Enter Competition" %>
+<% end %>
