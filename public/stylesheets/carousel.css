@@ -46,7 +46,15 @@
     .page img{
       float:left;
       margin-right:20px;
-    }
+      }
+      .page.mariners img{
+        margin:0 50px;
+      }
+      .page.mariners .button.mariners {
+        position:absolute;
+        bottom:20px;
+        right:70px;
+      }
     .page-number{
       float:right;
       bottom:0;
