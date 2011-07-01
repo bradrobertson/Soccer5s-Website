@@ -1,11 +1,10 @@
 <%= simple_form_for(@competition) do |f| %>
-  <%= f.input :name, :label => "Your Name <span>(required)</span>".html_safe, :required => false %>
-  <%= f.input :email, :label => "Email Address <span>(required)</span>".html_safe, :required => false %>
-  <%= f.input :telephone, :label => "Telephone number <span>(optional)</span>" %>
-  
-  <%= f.input :team_name, :label => "Team Name <span>(optional)</span>" %>
-  <%= f.input :favorite_mariner, :label => "Favorite Mariner <span>(optional)</span>" %>
-  <%= f.input :comments, :as => :text, :label => "Comments <span>(optional)</span>".html_safe, :required => false, :error => false %>
+  <%= f.input :name, :label => "Your Name", :required => false %>
+  <%= f.input :email, :label => "Email Address", :required => false %>
+  <%= f.input :team_name, :label => "Team Name", :required => false %>
+  <%= f.input :telephone, :label => "Telephone number" %>  
+  <%= f.input :favorite_mariner, :label => "Favorite Mariner" %>
+  <%= f.input :comments, :as => :text, :label => "Comments", :required => false, :error => false %>
 
   <%= f.button :submit, :class => 'submit', :value => "Enter Competition" %>
   <%= f.input :terms, :label => "I accept the <a href='/competitions/terms' target='_blank'>terms and conditions</a> of the competition", :label_html => {:class => 'terms'} %>
