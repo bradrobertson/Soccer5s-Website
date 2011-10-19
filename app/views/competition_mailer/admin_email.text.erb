@@ -1,8 +1,14 @@
 Another user has signed up for the Mariner's Competition:
 
-Email: <%= @competition.email %> 
 Name: <%= @competition.name %>
+Email: <%= @competition.email %> 
+Telephone: <%= @competition.telephone %>
+
+<% if @competition.subject %>
+Mariners 5-aside-tem: <%= @competition.comments %>
+<% else %>
 Team Name: <%= @competition.team_name %>
 Favorite Mariner: <%= @competition.favorite_mariner %>
-Telephone: <%= @competition.telephone %>
+
 Comments: <%= @competition.comments %>         
+<% end %>

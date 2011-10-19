@@ -9,7 +9,7 @@ class Competition < ActiveRecord::Base
     
   after_create :send_mail
   
-  attr_accessible :name, :email, :terms, :team_name, :favorite_mariner, :telephone, :comments
+  attr_accessible :name, :email, :terms, :team_name, :favorite_mariner, :telephone, :comments, :subject
   attr_accessor :terms_and_conditions
   
   private

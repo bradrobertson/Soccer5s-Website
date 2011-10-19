@@ -1,0 +1,24 @@
+<% content_for :slogan do %>
+  <%= render :partial => '/shared/std_slogan' %>
+<% end %>
+
+<% content_for :banner do %>
+  <h2 id="title">Mariner's Competition</h2>
+<% end %>
+
+<div id="main">
+  <ul class="tabs">
+    <li><%= link_to "Mariner's Competition", "#competition" %></li>
+  </ul>
+  
+  <div class="panes">
+    
+    <div class="competition">
+      <h2>Mariner's Competition</h2>
+      <p>Enter here to compete in the half time penalty shoot out against Perth Glory on the 29th, the winner will get to play against the Mariners select at the Soccer5s launch tournament? Fill in the form below to enter the draw.</p>
+      <p>The 2 runners up will receive a case of Bluetongue lager on the day of the game.</p>
+      
+      <%= render 'entry_form' %>
+    </div>
+  </div>
+</div>

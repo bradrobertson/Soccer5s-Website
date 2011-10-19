@@ -31,7 +31,16 @@ class CompetitionsController < ApplicationController
       format.xml  { render :xml => @competition }
     end
   end
+  
+  def entry
+    @competition = Competition.new
 
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @competition }
+    end
+  end
+  
   # GET /competitions/1/edit
   def edit
     @competition = Competition.find(params[:id])
@@ -41,13 +50,13 @@ class CompetitionsController < ApplicationController
   # POST /competitions.xml
   def create
     @competition = Competition.new(params[:competition])
-
+    
     respond_to do |format|
       if @competition.save
-        format.html { redirect_to(@competition, :notice => 'Competition was successfully created.') }
+        format.html { redirect_to(@competition, :notice => 'Competition was successfully entered.') }
         format.xml  { render :xml => @competition, :status => :created, :location => @competition }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => @competition.subject ? "entry" : "new" }    # dumb, for now use subject for new mariner's competition
         format.xml  { render :xml => @competition.errors, :status => :unprocessable_entity }
       end
     end
