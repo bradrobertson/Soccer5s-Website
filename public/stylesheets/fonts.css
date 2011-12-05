@@ -23,7 +23,8 @@ body h1{
 	}
 	#home h1{
 		font-size:40px;
-	}
+}
+
 body h2{	
 	color:#5a5a5a;
 	text-transform:uppercase;
@@ -32,7 +33,7 @@ body h2{
   }
   body h2 span.lower{
     text-transform:lowercase;
-  }
+}
 
 h2#title{
 	color:#fdd716;
@@ -76,14 +77,17 @@ p.quote{
 	}
 	#slogan p span{
 		color:#fdd716;
-	}
+}
 
-#notice h2{
+#notice h2,
+#overlay h2{
   color:#fff;
   }
-  #notice h2 span{
+  #notice h2 span,
+  #overlay h2 span{
     color:#fdd716;
-  }
+}
+  
 #home .info p{
 	color:#fff;
 	font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
@@ -103,6 +107,7 @@ p.quote{
   #carousel h2 span{
     color:#fdd716;
 }
+
 #carousel a.more{
   text-transform:uppercase;
   font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
