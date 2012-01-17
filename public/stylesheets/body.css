@@ -15,10 +15,17 @@
 	  margin:5px;
 	  border:1px solid #d7d7d7;
 	  margin-top:10px;
-    }
+  }
+  span.std.noborder{
+    border:none;
+    margin-right:50px;
+    }  
     span.std img{
       float:right;    /* Not sure why img has whitespace at the bottom, this fixes it */
       border:5px solid #fff;
+    }
+    span.std.noborder img{
+      border:none;
     }
 	
 	#sidebar{

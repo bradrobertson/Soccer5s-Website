@@ -18,3 +18,10 @@ html{
 .wrap{
 	padding:20px;
 }
+
+th {
+  font-weight:bold;
+}
+td, th {
+  padding:3px 5px;
+}
