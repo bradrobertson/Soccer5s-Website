@@ -1,17 +1,17 @@
 #carousel{
   position:relative;
-	height:200px;
-	background:#000 url('/images/embed/carousel-bg.png') no-repeat bottom right;
-	border-bottom:5px solid #fdd716;
-	}
-	.scrollable {
-		position:relative;
-		overflow:hidden;
-		height:100%;
-	}
-	.scrollable .items {
-  	width:20000em;
-  	position:absolute;
+  height:200px;
+  background:#000 image-url('embed/carousel-bg.png') no-repeat bottom right;
+  border-bottom:5px solid #fdd716;
+  }
+  .scrollable {
+    position:relative;
+    overflow:hidden;
+    height:100%;
+  }
+  .scrollable .items {
+    width:20000em;
+    position:absolute;
   }
   .navi{
     position:absolute;
@@ -37,11 +37,11 @@
         background:#fdd716;
         border-color:#fdd716;
   }
-    
+
   .items .page {
     width:960px;
-  	float:left;
-  	position:relative;
+    float:left;
+    position:relative;
     }
     .page img{
       float:left;
@@ -84,10 +84,10 @@
     }
     .browse.prev{
       left:-32px;
-      background-image:url('/images/embed/carousel-left.png');
+      background-image:image-url('embed/carousel-left.png');
     }
     .browse.next{
       right:-32px;
-      background-image:url('/images/embed/carousel-right.png');
+      background-image:image-url('embed/carousel-right.png');
   }
-  
+

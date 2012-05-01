@@ -2,36 +2,36 @@
 <html>
 <head>
   <title>Soccer5s</title>
-  
+
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-19297403-1']);
     _gaq.push(['_trackPageview']);
   </script>
-  
-  <%= include_stylesheets :soccer5s %>
+
+  <%= stylesheet_link_tag :application %>
   <%= csrf_meta_tag %>
 </head>
 <body id="<%= page %>" class="<%= section %>">
   <div id="content">
     <%= render :partial => 'shared/main_menu' %>
-    
+
     <div id="banner">
-      <div id="logo"><img src="/images/logos/white-trans.png" alt="logo" /></div>
+      <div id="logo"><%= image_tag 'logos/white-trans.png' %></div>
       <%= content_for :slogan %>
       <%= content_for :banner %>
     </div>
-    
+
     <% if content_for? :carousel %>
       <div id="carousel">
-        
+
         <div class="navi">
           <a href="#first" class="active">1</a>
           <a href="#second">2</a>
           <a href="#third">3</a>
           <a href="#fourth">4</a>
         </div>
-        
+
         <button class="prev browse">Previous</button>
         <div class="scrollable">
           <%= content_for :carousel %>
@@ -39,7 +39,7 @@
         <button class="next browse">Next</button>
       </div>
     <% end %>
-    
+
     <div id="body">
       <% if content_for? :sidebar %>
         <div id="sidebar">
@@ -48,7 +48,7 @@
       <% end %>
       <%= yield %>
     </div>
-    
+
     <div id="footer">
       <%= link_to raw("&copy; Soccer5s 2010"), "#" %> |
       <%= link_to "Contact", new_contact_path %> |
@@ -59,13 +59,13 @@
         <%= link_to image_tag('logos/twitter-icon.png'), 'http://twitter.com/soccer5s' %>
       </div>
     </div>
-    
+
   </div>
-  
+
 </body>
 
 <%= javascript_include_tag 'http://cdn.jquerytools.org/1.2.5/jquery.tools.min.js' %>
-<%= include_javascripts :soccer5s %>
+<%= javascript_include_tag :application %>
 
 <script type="text/javascript">
   (function() {
