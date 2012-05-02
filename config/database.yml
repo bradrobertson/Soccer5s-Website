@@ -17,16 +17,16 @@ test:
 
 staging:
   adapter: mysql
-  database: soccer5s_staging
-  username: soccer5s
-  password: Quah0ein
+  database: doesntexist
+  username: blah
+  password:
   pool: 5
   timeout: 5000
 
 production:
   adapter: mysql
-  database: soccer5s_production
-  username: soccer5s
-  password: Quah0ein
+  database: doesntexist
+  username: blah
+  password:
   pool: 10
   timeout: 5000
