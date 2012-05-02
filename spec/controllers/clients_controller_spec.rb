@@ -18,6 +18,7 @@ describe ClientsController do
 
   describe "GET show" do
     it "assigns the requested client as @client" do
+      pending
       Client.stub(:find).with("37") { mock_client }
       get :show, :id => "37"
       assigns(:client).should be(mock_client)

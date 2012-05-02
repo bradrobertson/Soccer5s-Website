@@ -66,7 +66,7 @@ describe CompetitionsController do
       it "re-renders the 'new' template" do
         Competition.stub(:new) { mock_competition(:save => false) }
         post :create, :competition => {}
-        response.should render_template("new")
+        response.should render_template("entry")
       end
     end
 
