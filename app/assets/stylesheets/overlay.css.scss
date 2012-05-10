@@ -1,27 +1,36 @@
 #overlay {
 
-		/* overlay is hidden before loading */
-		display:none;
+  /* overlay is hidden before loading */
+  display: none;
 
-		/* standard decorations */
-		width:400px;
-		border:10px solid #666;
+  /* standard decorations */
+  width: 640px;
+  height: 395px;
 
-		/* for modern browsers use semi-transparent color on the border. nice! */
-		border:10px solid rgba(82, 82, 82, 0.698);
+  /* for modern browsers use semi-transparent color on the border. nice! */
+  border: 20px solid #333;
+  border: 20px solid rgba(50, 50, 50, 0.8);
 
-		/* hot CSS3 features for mozilla and webkit-based browsers (rounded borders) */
-		-moz-border-radius:8px;
-		-webkit-border-radius:8px;
-		border-radius:8px;
-	}
+  /* hot CSS3 features for mozilla and webkit-based browsers (rounded borders) */
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
 
-	#overlay h2 {
-		margin:-11px;
-		margin-bottom:0px;
-		color:#fff;
-		background-color:#6D84B4;
-		padding:5px 10px;
-		border:1px solid #3B5998;
-		font-size:20px;
-	}
+  h2 {
+    margin-bottom:0px;
+    color:#000;
+    background-color: #FDD716;
+    padding:5px 10px;
+    font-size:20px;
+  }
+
+  .close {
+    position: absolute;
+    right: 0; top: 0;
+    display:block;
+    padding:10px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
