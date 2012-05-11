@@ -3,10 +3,23 @@
 *   Pop up an intro video when called
 *
 */
-!(function(){
+!(function(app){
   
-  function playVideo(){
-	  $("#overlay-trigger").overlay({
+  /**
+  *   @constructor
+  *
+  *   A video player
+  */
+  function Video(trigger){
+    this.$trigger = trigger || $("#overlay-trigger");
+  }
+  
+  /**
+  *   Play the video
+  *
+  */
+  Video.prototype.play = function(){
+	  this.$trigger.overlay({
   	  // some mask tweaks suitable for facebox-looking dialogs
       mask: {
         // you might also consider a "transparent" color for the mask
@@ -22,14 +35,24 @@
   	  closeOnClick: true,
   	  closeOnEsc: true,
 
-  	  onClose: stopVideo
+  	  onClose: this.stop
   	});
-	}
+  	return this;
+	};
 	
-	function stopVideo(e){
-    var $overlay = e.currentTarget.getOverlay(),
-        $iframe = $overlay.find('iframe').remove();
-	}
+	/**
+	*   Stop the video
+	*
+	*/
+	Video.prototype.stop = function(e){
+	  var $overlay = e ? e.currentTarget.getOverlay() : $(this.$trigger.attr('rel'));
+    
+    // Stopping is just removing the iframe
+    $overlay.find('iframe').remove();
+    
+    return this;
+	};
 	
-	app.playVideo = playVideo;
-})();
+	app.Video = Video;
+	
+})(app);

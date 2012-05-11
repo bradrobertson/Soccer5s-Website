@@ -1,7 +1,9 @@
 /*
 *= require jquery.cookie.js
 *= require_self
-*= require init.js
+*= require visitor.js
 *= require video.js
+*= require owner.js
+*= require init.js
 */
 var app = {};
