@@ -10,17 +10,35 @@
   <%= render :partial => '/shared/links' %>
 <% end %>
 
+<% content_for :js do %>
+  <script type="text/javascript">
+    $(function(){
+      $(".fancybox").fancybox();
+    });
+  </script>
+<% end %>
+
 <div id="main">
   <ul class="tabs">
-    <li><%= link_to "Facilities", "#" %></li>
+    <li><%= link_to "Facilities", "#facilities" %></li>
+    <li><%= link_to "Gallery", "#gallery" %></li>
   </ul>
-  
+
   <div class="panes">
-    <div>
+    <div class="facilities">
       <h2>Facilities</h2>
       <%= image_tag 'facilities.jpg' %>
       <p>We have 8 all weather five-a-side courts and 2 all weather seven-a-side courts in Tuggerah. These pitches are constructed using specialized 3G Astroturf designed for the rigors of five-a-side football.</p>
     </div>
+
+    <div class="gallery">
+      <h2>Gallery</h2>
+      <% 33.downto(1) do |x| %>
+        <%= link_to image_tag("facilities/gallery/thumb/photo-#{x}.jpg"), asset_path("facilities/gallery/full/photo-#{x}.jpg"),
+              :class => 'fancybox',
+              :rel => 'gallery'
+        %>
+      <% end %>
   </div>
-  
+
 </div>
