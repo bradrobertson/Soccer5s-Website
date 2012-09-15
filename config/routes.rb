@@ -1,5 +1,5 @@
 Soccer5s::Application.routes.draw do
-  
+
   resources :clients, :only => [:new, :index, :show, :create]
 
   root :to => "public#home"
@@ -11,12 +11,12 @@ Soccer5s::Application.routes.draw do
   match '/about', :to => 'public#about'
 
   resource :contact, :only => [:new, :show, :create]
-  
+
   resources :competitions do
     collection do
       get 'terms'
       get 'entry'
     end
   end
-  
+
 end

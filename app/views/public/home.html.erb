@@ -10,7 +10,7 @@
   <div id="home_links">
     <%#= link_to 'Kit Store', '#', :class => 'button' %>
     <%= link_to 'Leagues', "http://soccer-5s.ezleagues.ezfacility.com", :class => 'button', :target => '_blank' %>
-    <%= link_to 'Mariners Competition', new_competition_path, :class => 'button' %>
+    <%= link_to 'Join a League', new_contact_path(contact: {subject: 'Join a League Interest'}), :class => 'button' %>
   </div>
 <% end %>
 
