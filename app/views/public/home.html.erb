@@ -20,15 +20,23 @@
     <div class="page">
       <p class="page-number">01</p>
       <%= image_tag 'carousel/mariners-competition.jpg' %>
-      <h2>Join a league</h2>
+      <h2>Upcoming Summer Competitions</h2>
 
       <div class="col">
-        <h2>Call <span>02 4355 4805</span> now!</h2>
+        <h2>Only <span>$60</span> per game per team (5's) <span>$84</span> (7's)</h2><br />
+        <%= link_to 'Join a League', new_contact_path(contact: {subject: 'Join a League Interest'}), :class => 'button' %>
       </div>
 
-      <div class="col">
-        <p>Opens 5th December, Leagues for all ages and abilities</p>
-        <p>If you don't have a team we can put your name down and help you find a team</p>
+      <div class="col extended">
+        <ul>
+          <li>Men's 5's – Monday, Tuesday, Wednesday, Thursday, Sunday Nights</li>
+          <li>Men's 7's – Tuesday, Wednesday and Friday Nights</li>
+          <li>Mixed 5's – Monday and Tuesday Nights</li>
+          <li>Mixed 7's – Thursday Night</li>
+          <li>Woman's 5's – Wednesday Night</li>
+          <li>Over 35's Mens - Thursday and Sunday Night</li>
+          <li>Youth Competitions – Friday Nights and Saturday Mornings</li>
+        </ul>
       </div>
     </div>
 
