@@ -1,0 +1,29 @@
+// general utility css
+
+.col{
+  float:left;
+  width:275px;
+  color:#fff;
+  margin-right:20px;
+
+  &.extended { width: 350px; }
+
+  ul{ margin:10px; }
+
+  li{
+    font-size:12px;
+    list-style-type:disc;
+    color:#fdd716;
+
+    span, a {
+      color: #fff;
+    }
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.clear {
+  clear: both;
+}
