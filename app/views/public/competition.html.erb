@@ -10,16 +10,16 @@
   <%= render :partial => '/shared/links' %>
 <% end %>
 
-<div id="main">
+<%= main_content do %>
   <ul class="tabs">
     <li><%= link_to "Leagues", "#leagues" %></li>
     <li><%= link_to "Cups", "#cups" %></li>
     <li><%= link_to "Interstate", "#interstate" %></li>
     <li><%= link_to "Rules", "#rules" %></li>
   </ul>
-  
+
   <div class="panes">
-    
+
     <div class="leageus">
       <h2>Leagues</h2>
       <p>Be the best! Wear your favourite teams strip or your own team colours. Battle your way to the top!</p>
@@ -35,7 +35,7 @@
           <td></td>
         	<td>Mixed</td>
         </tr>
-        
+
         <tr>
           <th>Tuesday</th>
           <td>Mens</td>
@@ -44,7 +44,7 @@
           <td></td>
       		<td>Mixed</td>
       	</tr>
-      	
+
       	<tr>
       	  <th>Wednesday</th>
       	  <td>Mens</td>
@@ -53,12 +53,12 @@
       	  <td></td>
       	  <td>Womans</td>
       	</tr>
-      	
+
       	<tr>
       	  <th>Thursday</th>
       	  <td>Mens</td>
       	</tr>
-      	
+
       	<tr>
           <th>Friday</th>
           <td>Youth Boys Under 18</td>
@@ -71,29 +71,29 @@
           <td></td>
       		<td>Youth Mixed Under 14</td>
       	</tr>
-      	
+
       	<tr>
       	  <th>Sunday</th>
       	  <td>Mens Low Grade/Over35s</td>
       	</tr>
       </table>
-      
+
       <p><%= link_to 'Contact', new_contact_path %> Soccer5s for more information on how to register your team.</p>
       <p class="quote">'Join the League – Live the dream'</p>
     </div>
-    
+
     <div class="cups">
       <h2>Cups</h2>
       <p>Can’t commit to a league format, play in one of our cup competitions. Cups will run at varied times throughout the year. Enquire to Soccer5s for our latest information about up coming cup competitions. Soccer5s can also design a one off knockput competition for your needs so contact us to find out more.</p>
       <p class="quote">'Remember an underdog CAN have its day!'</p>
     </div>
-    
+
     <div class="interstate">
       <h2>Interstate</h2>
       <p>Winners of Soccer5s competitions in time may get the opportunity to qualify for any regional and interstate tournaments within the Soccer5s  future network.</p>
       <P>Do you have what it takes to get to the Grand Final and be crowned Australian Champions?</p>
     </div>
-    
+
     <div class="rules">
       <h2>Rules</h2>
       <p>All players must be registered to play in Soccer5s leagues. Teams can register squads up to 20 players per season. Players can only be registered to one team in an individual league set up.</p>
@@ -145,5 +145,5 @@
       </p>
     </div>
   </div>
-  
-</div>
+
+<% end %>

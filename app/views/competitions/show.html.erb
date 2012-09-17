@@ -2,13 +2,13 @@
   <h2 id="title">Mariner's Competition</h2>
 <% end %>
 
-<div id="main">
+<%= main_content do %>
   <ul class="tabs">
     <li><%= link_to "Mariner's Competition", "#competition" %></li>
   </ul>
-  
+
   <div class="panes">
-    
+
     <div class="competition">
       <h2>Thank You</h2>
       <p>Your Mariner's Competition Entry Form has been received</p>
@@ -17,4 +17,4 @@
       </form>
     </div>
   </div>
-</div>
+<% end %>

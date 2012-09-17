@@ -6,20 +6,20 @@
   <h2 id="title">Mariner's Competition</h2>
 <% end %>
 
-<div id="main">
+<%= main_content do %>
   <ul class="tabs">
     <li><%= link_to "Soccer5s Skills Challenge", "#competition" %></li>
   </ul>
-  
+
   <div class="panes">
-    
+
     <div class="competition">
       <h2>Soccer5s Skills Challenge</h2>
       <p>The first Socce5s Skills Challenge was a great success, with Angela Beattie emerging triumphant. Now it’s your chance to get on the pitch at half-time at the Mariners next home match against Perth Glory on the 29th of October.</p>
       <p>Two participants will face-off in a penalty-shoot-out and the winner will get to play against the Mariners select at the Soccer5s launch tournament! Fill in the form below to enter the draw.</p>
       <p>The 2 runners up will receive a case of Bluetongue lager on the day of the game.</p>
-      
+
       <%= render 'entry_form' %>
     </div>
   </div>
-</div>
+<% end %>

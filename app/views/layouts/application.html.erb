@@ -41,11 +41,7 @@
     <% end %>
 
     <div id="body">
-      <% if content_for? :sidebar %>
-        <div id="sidebar">
-          <div class="wrap"><%= content_for :sidebar %></div>
-        </div>
-      <% end %>
+      <%= sidebar %>
       <%= yield %>
     </div>
 

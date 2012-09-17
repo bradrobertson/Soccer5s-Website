@@ -6,13 +6,13 @@
   <h2 id="title">Mariner's Competition</h2>
 <% end %>
 
-<div id="main">
+<%= main_content do %>
   <ul class="tabs">
     <li><%= link_to "Mariner's Competition", "#competition" %></li>
   </ul>
-  
+
   <div class="panes">
-    
+
     <div class="competition">
       <h2>Mariner's Competition</h2>
       <p>The Socce5s Skills Challenges have been a great success. Now it’s your chance to get on the pitch at half-time at the Mariners next home match.</p>
@@ -21,4 +21,4 @@
       <%= render 'form' %>
     </div>
   </div>
-</div>
+<% end %>

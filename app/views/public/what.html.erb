@@ -10,11 +10,11 @@
   <%= render :partial => '/shared/links' %>
 <% end %>
 
-<div id="main">
+<%= main_content do %>
   <ul class="tabs">
     <li><%= link_to "What is 5-a-side", "#" %></li>
   </ul>
-  
+
   <div class="panes">
     <div>
       <h2>What is 5-a-side</h2>
@@ -26,5 +26,5 @@
       <p class="quote">'You can be the player You want to be'</p>
     </div>
   </div>
-  
-</div>
+
+<% end %>

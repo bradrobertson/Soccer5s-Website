@@ -10,11 +10,11 @@
   <%= render :partial => '/shared/links' %>
 <% end %>
 
-<div id="main">
+<%= main_content do %>
   <ul class="tabs">
     <li><%= link_to "About Soccer 5s", "#" %></li>
   </ul>
-  
+
   <div class="panes">
     <div>
       <h2>About Soccer 5s - History</h2>
@@ -23,8 +23,8 @@
       <p>It is very hard to get a full sized pitch and get together the 22 plus players that you need to have game of soccer every week.  Five-a-sides at one of our centres will ensure you feel like you are running out at Wembley at the FA Cup final every week.</p>
       <p>If you don’t believe, simply try it.</p>
       <p>Soccer5s brings your soccer dreams to life.</p>
-      <p class="quote">'Be the best'</p>      
+      <p class="quote">'Be the best'</p>
     </div>
   </div>
-  
-</div>
+
+<% end %>
