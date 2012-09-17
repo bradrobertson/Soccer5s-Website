@@ -47,8 +47,8 @@
 
       <div class="col">
         <ul>
-          <li><h3><%= link_to "Men's", "/docs/WCC Mens 22nd September Registration Form.docx" %> 22nd September 2012 Noon KO</h3></li>
-          <li><h3><%= link_to "Mixed", "/docs/WCC Mixed 22nd September Registration Form.docx" %> 22nd September 2012 Noon KO</h3></li>
+          <li><h3><%= link_to "Men's", asset_path("/docs/WCC Mens 22nd September Registration Form.docx") %> 22nd September 2012 Noon KO</h3></li>
+          <li><h3><%= link_to "Mixed", asset_path("/docs/WCC Mixed 22nd September Registration Form.docx") %> 22nd September 2012 Noon KO</h3></li>
         </ul>
       </div>
 
@@ -68,7 +68,7 @@
       <h2>Kids Parties</h2>
       <div class="col">
         <p>Give your child the <span>Wembley experience</span> for their birthday this year! Packages available from $250 per party</p>
-        <%= link_to "Download Registration Form", "/docs/Kids Party Leaflet.pdf", class: 'button' %>
+        <%= link_to "Download Registration Form", asset_path("/docs/Kids Party Leaflet.pdf"), class: 'button' %>
       </div>
       <div class="col"></div>
     </div>
