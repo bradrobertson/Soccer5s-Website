@@ -6,4 +6,8 @@
   padding:10px;
   padding-right:40px;
   background:image-url('embed/button.png') no-repeat center right;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
 }
