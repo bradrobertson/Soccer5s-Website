@@ -1,7 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'rails', '~> 3.2.3'
-gem "simple_form"
+gem 'simple_form'
+gem 'refinerycms'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.6.1'
