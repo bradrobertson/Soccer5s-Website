@@ -6,7 +6,7 @@
 *
 */
 !(function(app, undefined){
-  
+
   /**
   *   @constructor
   *
@@ -20,7 +20,7 @@
     // Generate expiry, defaults to 5 minutes
     this.expires.setMinutes( this.now.getMinutes() + (expiry || 5) );
   }
-  
+
   /**
   *   Set the visited boolean
   *
@@ -28,7 +28,7 @@
   Visitor.prototype.visit = function(){
     return $.cookie('visited', true, {expires: this.expires});
   };
-  
+
   /**
   *   @return {Boolean}
   *
@@ -38,7 +38,7 @@
   Visitor.prototype.checkAccess = function(){
     return $.cookie('visited') == 'true';
   };
-  
+
   app.Visitor = Visitor;
-  
+
 })(app);

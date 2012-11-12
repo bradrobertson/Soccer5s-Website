@@ -1,6 +1,15 @@
-<section id='body_content'>
-  <%=raw @page.content_for(:body) %>
+<section id="banner">
+  <div id="logo"><%= image_tag 'logos/white-trans.png' %></div>
+  <%= render :partial => home_page? ? '/shared/enhanced_slogan' : '/shared/std_slogan' %>
+  <h2 id="title"><%= page_title %></h2>
 </section>
+
+<section id='body_content'>
+  <div id="main">
+    <%=raw @page.content_for(:body) %>
+  </div>
+</section>
+
 <section id='side_body_content'>
   <%=raw @page.content_for(:side_body) %>
 </section>

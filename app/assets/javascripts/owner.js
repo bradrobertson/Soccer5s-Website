@@ -6,15 +6,15 @@
 *
 */
 !(function(app){
-  
+
   /**
   *   @constructor
   *
   */
   function Owner(){
-    
+
   }
-  
+
   /**
   *   @return {Boolean}
   *
@@ -23,7 +23,7 @@
   Owner.prototype.home = function(){
     return !!(e = document.getElementById('home')) && e.nodeName == "BODY";
   };
-  
+
   /**
   *   @return {Boolean}
   *
@@ -32,7 +32,7 @@
   Owner.prototype.visited = function(){
     return new app.Visitor().checkAccess();
   };
-  
+
   /**
   *   Welcome our user to the site if they haven't visited before
   *
@@ -43,6 +43,6 @@
       this.video = new app.Video().play();
     }
   };
-  
+
   app.Owner = Owner;
 })(app);

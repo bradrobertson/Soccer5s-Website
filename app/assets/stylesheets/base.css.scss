@@ -9,7 +9,7 @@ body{
   font:normal normal normal 1em arial, sans-serif;
 }
 
-#content{
+#page_container{
   position:relative;
   width:960px;
   height:100%;
@@ -19,6 +19,10 @@ body{
   .wrap{
     padding:20px;
   }
+}
+
+#logo {
+  display: none;
 }
 
 th {

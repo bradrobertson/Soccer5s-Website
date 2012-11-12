@@ -3,41 +3,41 @@
 *
 *
 */
-ul#main-menu{
+#menu{
   overflow:auto;
   width:100%;  /* IE6 */
   background:#000 image-url('embed/menu.png') repeat-x;
   font: normal normal bold 14px arial, sans-serif;
-  }
-  #main-menu li{
+
+  li{
     float:left;
     border-right:1px solid #bca21e;
     border-left:1px solid #fee460;
-    }
+
     /*
     *   Ideally we'd use :first-child, :last-child here but IE7 sucks
     *   And the IE9 js causes a flash of styled content
     *
     */
-    #main-menu li#home-link{border-left:0;}
-    #main-menu li#contact-link{border-right:0;}
+    &#home-link{border-left:0;}
+    &#contact-link{border-right:0;}
 
-    li#home-link{width:97px;}
-    li#what-link{width:169px;}
-    li#facility-link{width:117px;}
-    li#events-link{width:110px;}
-    li#training-link{width:105px;}
-    li#competition-link{width:133px;}
-    li#about-link{width:105px;}
-    li#contact-link{width:110px;}
+    &#home-link{width:97px;}
+    &#what-link{width:169px;}
+    &#facility-link{width:117px;}
+    &#events-link{width:110px;}
+    &#training-link{width:105px;}
+    &#competition-link{width:133px;}
+    &#about-link{width:105px;}
+    &#contact-link{width:110px;}
 
-    ul#main-menu li#home-link a{background-position: 75px 22px;}
-    ul#main-menu li#what-link a{background-position: 150px 22px;}
-    ul#main-menu li#events-link a{background-position: 85px 22px;}
-    ul#main-menu li#competition-link a{background-position: 118px 22px;}
-    ul#main-menu li#contact-link a{background-position: 90px 22px;}
+    &#home-link a{background-position: 75px 22px;}
+    &#what-link a{background-position: 150px 22px;}
+    &#events-link a{background-position: 85px 22px;}
+    &#competition-link a{background-position: 118px 22px;}
+    &#contact-link a{background-position: 90px 22px;}
 
-    #main-menu a{
+    a {
       display:block;
       height:41px;
       line-height:41px;
@@ -46,33 +46,16 @@ ul#main-menu{
       color:#000;
       text-align:center;
       background:transparent image-url('embed/menu-bullet.png') no-repeat 90% 22px;
-}
+    }
 
-/**
-*    Denote 'active' links by their body id
-*
-*/
-#home li#home-link,
-#what li#what-link,
-#facilities li#facility-link,
-#events li#events-link,
-#training li#training-link,
-#competition li#competition-link,
-#about li#about-link,
-body.contacts li#contact-link{
-  background-color:#000;
-  border-left:1px solid #000;
-}
-#home li#home-link{border-left:0;}
+    &.selected {
+      background-color:#000;
+      border-left:1px solid #000;
 
-#home li#home-link a,
-#what li#what-link a,
-#facilities li#facility-link a,
-#events li#events-link a,
-#training li#training-link a,
-#competition li#competition-link a,
-#about li#about-link a,
-body.contacts li#contact-link a{
-  color:#fdd716;
-  background:transparent image-url('embed/menu-bullet-on.png') no-repeat 90% 22px;
+      a {
+        color:#fdd716;
+        background:transparent image-url('embed/menu-bullet-on.png') no-repeat 90% 22px;
+      }
+    }
+  }
 }
