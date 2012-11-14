@@ -1,3 +1,5 @@
+@import 'mixins/clearfix';
+
 html{
   height:100%;
   background:#050708 image-url('bg.jpg') repeat-x top center;
@@ -39,4 +41,8 @@ a {
 
 .highlight {
   color: #FDD716;
+}
+
+.cf {
+  @include clearfix;
 }

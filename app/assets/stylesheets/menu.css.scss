@@ -1,10 +1,11 @@
+@import 'mixins/clearfix';
 /**
 *    Main menu for soccer5s
 *
 *
 */
 #menu{
-  overflow:auto;
+  @include clearfix;
   width:100%;  /* IE6 */
   background:#000 image-url('embed/menu.png') repeat-x;
   font: normal normal bold 14px arial, sans-serif;
@@ -14,38 +15,24 @@
     border-right:1px solid #bca21e;
     border-left:1px solid #fee460;
 
-    /*
-    *   Ideally we'd use :first-child, :last-child here but IE7 sucks
-    *   And the IE9 js causes a flash of styled content
-    *
-    */
-    &#home-link{border-left:0;}
-    &#contact-link{border-right:0;}
-
-    &#home-link{width:97px;}
-    &#what-link{width:169px;}
-    &#facility-link{width:117px;}
-    &#events-link{width:110px;}
-    &#training-link{width:105px;}
-    &#competition-link{width:133px;}
-    &#about-link{width:105px;}
-    &#contact-link{width:110px;}
-
-    &#home-link a{background-position: 75px 22px;}
-    &#what-link a{background-position: 150px 22px;}
-    &#events-link a{background-position: 85px 22px;}
-    &#competition-link a{background-position: 118px 22px;}
-    &#contact-link a{background-position: 90px 22px;}
+    &.first{border-left:0;}
+    &.last{border-right:0;}
 
     a {
       display:block;
+      padding: 0 20px;
       height:41px;
       line-height:41px;
       text-decoration:none;
       text-transform:uppercase;
       color:#000;
       text-align:center;
-      background:transparent image-url('embed/menu-bullet.png') no-repeat 90% 22px;
+
+      &:after {
+        content: image-url('embed/menu-bullet.png');
+        margin-right: -5px;
+        margin-left: 5px;
+      }
     }
 
     &.selected {
@@ -54,7 +41,10 @@
 
       a {
         color:#fdd716;
-        background:transparent image-url('embed/menu-bullet-on.png') no-repeat 90% 22px;
+
+        &:after {
+          content: image-url('embed/menu-bullet-on.png');
+        }
       }
     }
   }
