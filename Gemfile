@@ -1,8 +1,9 @@
 source 'http://rubygems.org'
 
-gem 'rails', '~> 3.2.3'
-gem 'simple_form'
+# gem 'rails', '~> 3.2.3'
 gem 'refinerycms'
+gem "jquery-rails"    # should shouldn't be needed, refinery depends on it... but if F's up for some reason without it
+gem 'simple_form'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.6.1'
