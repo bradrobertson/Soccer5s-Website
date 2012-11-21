@@ -33,21 +33,24 @@ span.std.noborder{
     border:none;
   }
 
-#sidebar{
+#side_body{
   float:right;
   height:100%;
   width:310px;
   color:#5a5a5a;
   line-height:110%;
-  }
-  #sidebar p a{
+
+  p a{
     color:#5a5a5a;
     font-weight:bold;
     font-style:italic;
   }
-  #sidebar .logos{
+
+  .logos{
     overflow:auto;
-    }
-    #sidebar .logos p{
+
+    p{
       text-align:center;
+    }
   }
+}

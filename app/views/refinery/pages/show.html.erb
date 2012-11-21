@@ -1,8 +1,4 @@
-<section id="banner">
-  <div id="logo"><%= image_tag 'logos/white-trans.png' %></div>
-  <%= render :partial => home_page? ? '/shared/enhanced_slogan' : '/shared/std_slogan' %>
-  <h2 id="title"><%= page_title %></h2>
-</section>
+<%= render '/shared/banner' %>
 
 <section id='body_content'>
   <div id="main">
