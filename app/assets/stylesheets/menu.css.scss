@@ -15,7 +15,10 @@
     border-right:1px solid #bca21e;
     border-left:1px solid #fee460;
 
-    &.first{border-left:0;}
+    &.first, &.first.selected{
+      border-left:0;
+    }
+
     &.last {
       border-right:0;
 

@@ -1,11 +1,11 @@
 <%= render '/shared/banner' %>
 
-<section id='body_content'>
-  <div id="main">
+<div id='body'>
+  <section id='main'>
     <%=raw @page.content_for(:body) %>
-  </div>
-</section>
+  </section>
 
-<section id='side_body_content'>
-  <%=raw @page.content_for(:side_body) %>
-</section>
+  <section id='sidebar'>
+    <%=raw @page.content_for(:side_body) %>
+  </section>
+</div>

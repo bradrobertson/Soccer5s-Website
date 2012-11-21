@@ -1,10 +1,11 @@
-<section id="banner">
-  <%= render :partial => home_page? ? '/shared/enhanced_slogan' : '/shared/std_slogan' %>
-</section>
+<%= render '/shared/banner' %>
 
-<section id='body_content'>
-  <%=raw @page.content_for(:body) %>
-</section>
-<section id='side_body_content'>
-  <%=raw @page.content_for(:side_body) %>
-</section>
+<div id='body'>
+  <section id='main'>
+    <%=raw @page.content_for(:body) %>
+  </section>
+
+  <section id='sidebar'>
+    <%=raw @page.content_for(:side_body) %>
+  </section>
+</div>
