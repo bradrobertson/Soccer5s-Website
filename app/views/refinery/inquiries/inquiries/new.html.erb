@@ -12,11 +12,10 @@
         <%=raw @page.content_for(:body) %>
 
         <%= simple_form_for [refinery, :inquiries, @inquiry] do |f| %>
-          <%= render :partial => "/refinery/admin/error_messages", :locals => {:object => @inquiry, :include_object_name => true } %>
           <%= f.input :name, :label => "Your Name <span>(required)</span>".html_safe, :required => false %>
           <%= f.input :email, :label => "Email Address <span>(required)</span>".html_safe, :required => false %>
           <%= f.input :phone, :label => "Telephone number <span>(optional)</span>" %>
-          <%= f.input :message, :as => :text, :label => "Your Message <span>(optional)</span>".html_safe, :required => false, :error => false %>
+          <%= f.input :message, :as => :text, :label => "Your Message".html_safe, :required => false, :error => false %>
 
           <%= f.button :submit, :class => 'submit', :value => t('.send') %>
           <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if Refinery::Inquiries.show_contact_privacy_link %>

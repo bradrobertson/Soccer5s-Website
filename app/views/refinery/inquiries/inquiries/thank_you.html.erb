@@ -1,1 +1,26 @@
-<%= render :partial => "/refinery/content_page" %>
+<%= render '/shared/banner' %>
+
+<div id='body'>
+  <section id='main'>
+    <ul class="tabs">
+      <li><a href="#form" class="current">Contact Form</a></li>
+      <li><a href="#map">Location Map</a></li>
+    </ul>
+
+    <div class="panes">
+      <div>
+        <%=raw @page.content_for(:body) %>
+      </div>
+
+      <div>
+        <h2>Map</h2><br>
+        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Club+Tuggerah,+Bryant+Drive,+Tuggerah+&amp;aq=&amp;sll=-25.335448,135.745076&amp;sspn=49.716039,82.353516&amp;ie=UTF8&amp;hq=Club+Tuggerah,&amp;hnear=Bryant+Dr,+Tuggerah+New+South+Wales+2259&amp;ll=-33.30998,151.422908&amp;spn=0.006223,0.009141&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe><br><small><a href="http://maps.google.com.au/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Club+Tuggerah,+Bryant+Drive,+Tuggerah+&amp;aq=&amp;sll=-25.335448,135.745076&amp;sspn=49.716039,82.353516&amp;ie=UTF8&amp;hq=Club+Tuggerah,&amp;hnear=Bryant+Dr,+Tuggerah+New+South+Wales+2259&amp;ll=-33.30998,151.422908&amp;spn=0.006223,0.009141&amp;z=16&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+      </div>
+    </div>
+  </section>
+
+  <section id='sidebar'>
+    <%= raw @page.content_for(:side_body) %>
+  </section>
+</div>
+
