@@ -1,24 +1,20 @@
 #body{
-  /*This is annoying, but for some reason i can't get main/body to both always be height 100% depending on who is taller*/
-  background:#ebebeb image-url('embed/body-bg.png') repeat-y 650px center;
-  overflow:auto;
-  width:100%;
-}
+  background-color: #ebebeb;
 
-#main{
-  margin-right:310px;
-
-  &.with-sidebar {
-    min-height: 750px;
+  & > section {
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
+#main{
+  width: 67%;
+  border-right: 1px solid #cecece;
+}
+
 #sidebar{
-  float:right;
-  height:100%;
-  width:310px;
   color:#5a5a5a;
-  line-height:110%;
+  padding: 20px;
 
   p a{
     color:#5a5a5a;
