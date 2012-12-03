@@ -1,19 +1,20 @@
-#home #banner{
-  height:413px;
-  background-image:image-url('banners/banner-1.jpg');
-  background-position:left;
-  }
+#home {
+  #banner{
+    height:413px;
+    background-image:image-url('banners/banner-1.jpg');
+    background-position:left;
+    }
 
-  #home #logo{
+  #logo{
     padding:30px 50px 0 0;
     text-align:right;
     right:20px;
   }
 
-  #home #slogan{
+  #slogan{
     width:400px;
   }
-  #home .info{
+  .info{
     position:absolute;
     width:270px;
     height:80px;
@@ -22,22 +23,23 @@
     left:0;
   }
 
-  #home .bg{
+  .bg{
     background:#000;
     opacity:0.6;
     filter:alpha(opacity=60);      /* IE */
   }
 
-#home #body,
-#home .panes{
-  background-image:none;
+  #body,
+  .panes{
+    background-image:none;
   }
-  #home .panes{
+  .panes{
     padding:20px;
-}
+  }
 
-#home .logos{
-  padding:20px;
+  .logos{
+    padding:20px;
+  }
 }
 
 #home_links{
