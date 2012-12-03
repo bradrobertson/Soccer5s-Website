@@ -1,21 +1,25 @@
-#footer{
+footer {
   height:35px;
   padding:0 10px;
 	background:#1b1b1b;
 	border:1px solid #363738;
-	}
-	#footer a{
+
+	a {
 		color:#fff;
 		font-weight:normal;
 		line-height:35px;
-	}
-	#footer a:first-child{
+
+		&:first-child {
 		color:#fdd716;
+		}
 	}
-	#footer .social{
+
+	.social {
 	  float:right;
     padding:5px 0;
-	  }
-	  #footer .social a{
+
+	  a {
 	    line-height:inherit;
 	  }
+	}
+}
