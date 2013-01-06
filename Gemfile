@@ -13,6 +13,7 @@ group :development, :test do
   gem 'database_cleaner', '0.5.2'
   gem 'factory_girl'
   gem 'sqlite3'
+  gem 'pry'
 end
 
 group :production do
