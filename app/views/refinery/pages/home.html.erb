@@ -1,8 +1,26 @@
 <%= render '/shared/banner' %>
 
+<% if carousel? %>
+<div id="carousel">
+  <div class="navi">
+    <% carousel_items.each_with_index do |page, index| %>
+      <%= link_to index + 1, "##{carousel_page(index)}", class: index.zero? ? "active" : "" %>
+    <% end %>
+  </div>
+
+  <button class="prev browse">Previous</button>
+  <div class="scrollable">
+    <div class="items">
+      <%= render partial: '/shared/carousel', collection: carousel_items %>
+    </div>
+  </div>
+  <button class="next browse">Next</button>
+</div>
+<% end %>
+
 <%= body do %>
   <%= main do %>
-    <%=raw @page.content_for(:body) %>
+    <%= raw @page.content_for(:body) %>
   <% end %>
 
   <%= sidebar do %>

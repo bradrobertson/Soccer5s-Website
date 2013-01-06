@@ -1,0 +1,16 @@
+@mixin button {
+  font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
+  font-size:12px;
+  background:#000;
+  color:#fdd716;
+  border:1px solid #fdd716;
+  text-transform:uppercase;
+  text-decoration: none;
+  padding:10px;
+  padding-right:40px;
+  background:image-url('embed/button.png') no-repeat center right;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
