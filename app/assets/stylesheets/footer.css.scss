@@ -1,25 +1,27 @@
-footer {
-  height:35px;
-  padding:0 10px;
-	background:#1b1b1b;
-	border:1px solid #363738;
+#page_container {
+	& > footer {
+	  height:35px;
+	  padding:0 10px;
+		background:#1b1b1b;
+		border:1px solid #363738;
 
-	a {
-		color:#fff;
-		font-weight:normal;
-		line-height:35px;
+		a {
+			color:#fff;
+			font-weight:normal;
+			line-height:35px;
 
-		&:first-child {
-		color:#fdd716;
+			&:first-child {
+			color:#fdd716;
+			}
 		}
-	}
 
-	.social {
-	  float:right;
-    padding:5px 0;
+		.social {
+		  float:right;
+	    padding:5px 0;
 
-	  a {
-	    line-height:inherit;
-	  }
+		  a {
+		    line-height:inherit;
+		  }
+		}
 	}
 }

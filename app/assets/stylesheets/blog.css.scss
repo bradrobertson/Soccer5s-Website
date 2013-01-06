@@ -1,0 +1,13 @@
+.blog-post {
+  header {
+    & > h2 {
+      a {
+        color: #5a5a5a;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
