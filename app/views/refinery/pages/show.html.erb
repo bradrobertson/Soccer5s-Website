@@ -2,11 +2,20 @@
 
 <div id='body'>
   <section id='main'>
-    <%=raw @page.content_for(:body) %>
+    <% if nested? %>
+      <ul class="tabs">
+        <% pages_for_section.each do |page| %>
+          <li><%= link_to page.title, refinery.url_for(page.url), class: @page == page ? "current" : "" %></li>
+        <% end %>
+      </ul>
+    <% end %>
+
+    <div class="panes">
+      <%= raw @page.content_for(:body) %>
+    </div>
   </section>
 
   <section id='sidebar'>
     <%= render 'shared/fb_like_box' %>
-    <%#=raw @page.content_for(:side_body) %>
   </section>
 </div>

@@ -63,9 +63,14 @@ ol{
   list-style-position:inside;
 }
 
-p.quote{
-  font-style:italic;
+strong{
   font-weight:bold;
+
+  em {
+    font-weight:bold;
+    font-style:italic;
+    font-size: 0.8em;
+  }
 }
 
 #slogan p{
