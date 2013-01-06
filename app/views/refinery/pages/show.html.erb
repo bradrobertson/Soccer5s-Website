@@ -1,7 +1,7 @@
 <%= render '/shared/banner' %>
 
-<div id='body'>
-  <section id='main'>
+<%= body do %>
+  <%= main do %>
     <% if nested? %>
       <ul class="tabs">
         <% pages_for_section.each do |page| %>
@@ -13,9 +13,9 @@
     <div class="panes">
       <%= raw @page.content_for(:body) %>
     </div>
-  </section>
+  <% end %>
 
-  <section id='sidebar'>
+  <%= sidebar do %>
     <%= render 'shared/fb_like_box' %>
-  </section>
-</div>
+  <% end %>
+<% end %>

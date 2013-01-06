@@ -4,23 +4,19 @@ module ApplicationHelper
     controller_name.underscore
   end
 
-  def page
+  def id
     action_name.underscore
   end
 
-  def sidebar
-    content_tag :div, id: 'sidebar' do
-      content_tag :div, class: 'wrap' do
-        content_for :sidebar
-      end
-    end if content_for? :sidebar
+  def body(&block)
+    content_tag(:div, id: 'body', &block)
   end
 
-  def sidebar_class
-    content_for?(:sidebar) ? 'with-sidebar' : ''
+  def main(&block)
+    content_tag(:section, id: 'main', &block)
   end
 
-  def main_content(&block)
-    content_tag(:div, id: 'main', class: sidebar_class, &block)
+  def sidebar(&block)
+    content_tag(:section, id: 'sidebar', &block)
   end
 end

@@ -1,11 +1,11 @@
 <%= render '/shared/banner' %>
 
-<div id='body'>
-  <section id='main'>
+<%= body do %>
+  <%= main do %>
     <%=raw @page.content_for(:body) %>
-  </section>
+  <% end %>
 
-  <section id='sidebar'>
+  <%= sidebar do %>
     <%= render 'shared/fb_like_box' %>
-  </section>
-</div>
+  <% end %>
+<% end %>
