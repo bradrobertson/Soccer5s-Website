@@ -25,14 +25,14 @@
       // this padding is to fix up the empty space in the menu
       // i'm sure at least one browser will F this up
       a {
-        padding-left: 20px;
-        padding-right: 24px
+        padding-left: 10px;
+        padding-right: 14px
       }
     }
 
     a {
       display:block;
-      padding: 0 18px 0 19px; // weird i know... makes the menu fit perfectly
+      padding: 0 18px;
       height:41px;
       line-height:41px;
       text-decoration:none;
