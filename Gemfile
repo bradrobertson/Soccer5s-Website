@@ -4,8 +4,6 @@ gem 'refinerycms'
 gem 'refinerycms-inquiries'
 gem 'refinerycms-blog'
 
-gem 'fog'
-
 gem "jquery-rails"    # should shouldn't be needed, refinery depends on it... but if F's up for some reason without it
 gem 'simple_form'
 
@@ -17,10 +15,11 @@ group :development, :test do
   gem 'pry'
 end
 
-group :production do
-  gem 'pg', '~> 0.13'
-  gem 'newrelic_rpm', '~> 3.4'
+group :production, :staging do
+  gem 'pg', '~> 0.14'
+  gem 'newrelic_rpm', '~> 3.5'
   gem 'thin', '~> 1.3'
+  gem 'fog'
 end
 
 # Gems used only for assets and not required
