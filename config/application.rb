@@ -34,7 +34,7 @@ module Soccer5s
       g.fixture_replacement :factory_girl, :dir => "spec/factories"
       g.form_builder :simple_form
     end
-    
+
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
@@ -47,7 +47,7 @@ module Soccer5s
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
-    
+
     # Use SQL instead of Active Record's schema dumper when creating the database.
     # This is necessary if your schema can't be completely dumped by the schema dumper,
     # like if you have constraints or database-specific column types
@@ -64,8 +64,8 @@ module Soccer5s
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.1'
-    
+
     # requires so heroku doesn't connect to db on precompile
-    config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = true
   end
 end
