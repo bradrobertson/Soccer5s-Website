@@ -4,6 +4,7 @@ gem 'refinerycms'
 gem 'refinerycms-inquiries'
 gem 'refinerycms-blog'
 
+gem 'fog'
 
 gem "jquery-rails"    # should shouldn't be needed, refinery depends on it... but if F's up for some reason without it
 gem 'simple_form'
