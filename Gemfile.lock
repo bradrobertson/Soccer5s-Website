@@ -48,7 +48,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.5.0)
-    newrelic_rpm (3.4.2.1)
+    newrelic_rpm (3.5.5.38)
     pg (0.13.2)
     polyglot (0.3.3)
     rack (1.4.4)
@@ -121,7 +121,7 @@ PLATFORMS
 DEPENDENCIES
   database_cleaner (= 0.5.2)
   factory_girl
-  newrelic_rpm (~> 3.4)
+  newrelic_rpm (~> 3.5)
   pg (~> 0.13)
   rails (~> 3.2.3)
   rspec-rails (~> 2.6.1)
