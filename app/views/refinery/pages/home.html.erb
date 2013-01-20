@@ -20,7 +20,11 @@
 
 <%= body do %>
   <%= main do %>
-    <%= raw @page.content_for(:body) %>
+    <div class="panes">
+      <div id="show_blog_post">
+        <%= render :partial => "/refinery/blog/shared/post", :object => Refinery::Blog::Post.latest %>
+      </div>
+    </div>
   <% end %>
 
   <%= sidebar do %>

@@ -22,3 +22,5 @@ Refinery::PagesController.class_eval do
   end
   helper_method :carousel_items
 end
+
+Refinery::PagesController.helper(Refinery::Blog::PostsHelper)
