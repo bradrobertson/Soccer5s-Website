@@ -95,13 +95,13 @@ GEM
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-ssh (2.6.2)
-    newrelic_rpm (3.4.2.1)
+    newrelic_rpm (3.5.4.34)
     nokogiri (1.5.6)
     orm_adapter (0.0.7)
     paper_trail (2.7.0)
       activerecord (~> 3.0)
       railties (~> 3.0)
-    pg (0.13.2)
+    pg (0.14.1)
     polyglot (0.3.3)
     pry (0.9.10)
       coderay (~> 1.0.5)
@@ -243,8 +243,8 @@ DEPENDENCIES
   factory_girl
   fog
   jquery-rails
-  newrelic_rpm (~> 3.4)
-  pg (~> 0.13)
+  newrelic_rpm (~> 3.5)
+  pg (~> 0.14)
   pry
   refinerycms
   refinerycms-blog
