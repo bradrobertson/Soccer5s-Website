@@ -96,7 +96,7 @@
     }
   }
 
-  a {
+  a.font-size-large {
     @include button;
   }
 
@@ -110,11 +110,7 @@
 
     a {
       color: #fff;
-      background: none;
-      border: none;
-      display: inline;
-      text-transform: none;
-      padding: 0;
+      text-decoration: underline;
     }
   }
 
