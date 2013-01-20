@@ -12,6 +12,10 @@
 
     <div class="panes">
       <%= raw @page.content_for(:body) %>
+
+      <% @page.images.each do |image| %>
+        <%= link_to image_tag(image.thumbnail("175x120").url), image.thumbnail("900x600").url, class: 'fancybox', rel: 'gallery' %>
+      <% end %>
     </div>
   <% end %>
 

@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'refinerycms'
 gem 'refinerycms-inquiries'
 gem 'refinerycms-blog'
+gem 'refinerycms-page-images'
 
 gem 'fog'
 

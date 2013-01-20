@@ -175,6 +175,8 @@ GEM
       filters_spam (~> 0.2)
       refinerycms-core (~> 2.0.1)
       refinerycms-settings (~> 2.0.1)
+    refinerycms-page-images (2.0.1)
+      refinerycms-pages (~> 2.0.0)
     refinerycms-pages (2.0.9)
       awesome_nested_set (~> 2.1.3)
       babosa (!= 0.3.6)
@@ -247,6 +249,7 @@ DEPENDENCIES
   refinerycms
   refinerycms-blog
   refinerycms-inquiries
+  refinerycms-page-images
   rspec-rails (~> 2.6.1)
   sass-rails (~> 3.2.3)
   simple_form
