@@ -9,53 +9,57 @@
   width:100%;  /* IE6 */
   background:#000 image-url('embed/menu.png') repeat-x;
   font: normal normal bold 14px arial, sans-serif;
+  display: table;
 
-  li{
-    float:left;
-    border-right:1px solid #bca21e;
-    border-left:1px solid #fee460;
+  & > ul {
+    display: table-row;
 
-    &.first, &.first.selected{
-      border-left:0;
-    }
+    & > li{
+      display: table-cell;
+      border-right:1px solid #bca21e;
+      border-left:1px solid #fee460;
 
-    &.last {
-      border-right:0;
-
-      // this padding is to fix up the empty space in the menu
-      // i'm sure at least one browser will F this up
-      a {
-        padding-left: 10px;
-        padding-right: 14px
+      &.first, &.first.selected{
+        border-left:0;
       }
-    }
 
-    a {
-      display:block;
-      padding: 0 18px;
-      height:41px;
-      line-height:41px;
-      text-decoration:none;
-      text-transform:uppercase;
-      color:#000;
-      text-align:center;
+      &.last {
+        border-right:0;
 
-      &:after {
-        content: image-url('embed/menu-bullet.png');
-        margin-right: -5px;
-        margin-left: 5px;
+        // this padding is to fix up the empty space in the menu
+        // i'm sure at least one browser will F this up
+        a {
+          padding-left: 10px;
+          padding-right: 14px
+        }
       }
-    }
-
-    &.selected {
-      background-color:#000;
-      border-left:1px solid #000;
 
       a {
-        color:#fdd716;
+        display:block;
+        height:41px;
+        line-height:41px;
+        text-decoration:none;
+        text-transform:uppercase;
+        color:#000;
+        text-align:center;
 
         &:after {
-          content: image-url('embed/menu-bullet-on.png');
+          content: image-url('embed/menu-bullet.png');
+          margin-right: -5px;
+          margin-left: 5px;
+        }
+      }
+
+      &.selected {
+        background-color:#000;
+        border-left:1px solid #000;
+
+        a {
+          color:#fdd716;
+
+          &:after {
+            content: image-url('embed/menu-bullet-on.png');
+          }
         }
       }
     }
