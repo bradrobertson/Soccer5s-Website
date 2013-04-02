@@ -1,4 +1,4 @@
-<section id="banner">
+<section id="banner" class="<%= %w{one two three four five six seven}.sample %>">
   <div id="logo"><%= image_tag 'logos/white-trans.png' %></div>
   <%= render :partial => home_page? ? '/shared/banner/enhanced' : '/shared/banner/std' %>
 </section>
