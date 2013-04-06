@@ -19,4 +19,18 @@ module ApplicationHelper
   def sidebar(&block)
     content_tag(:section, id: 'sidebar', &block)
   end
+
+  def random_banner
+    (home_page? ? home_banners : page_banners).sample
+  end
+
+private
+
+  def page_banners
+    %w{one two three four five six seven}
+  end
+
+  def home_banners
+    %w{one two}
+  end
 end

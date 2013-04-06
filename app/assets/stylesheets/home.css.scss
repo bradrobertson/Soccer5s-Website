@@ -1,9 +1,17 @@
+@import "compass/css3/opacity";
+
 #home {
   #banner{
-    height:413px;
-    background-image:image-url('banners/banner-1.jpg');
-    background-position:left;
-    }
+    height:415px;
+    border-bottom: 5px solid #fff;
+
+    &.one   { background-image: image-url('banners/home/one.jpg');   }
+    &.two   { background-image: image-url('banners/home/two.jpg');   }
+    &.three { background-image: image-url('banners/home/three.jpg'); }
+    &.four  { background-image: image-url('banners/home/four.jpg');  }
+    &.five  { background-image: image-url('banners/home/five.jpg');  }
+    &.six   { background-image: image-url('banners/home/six.jpg');   }
+  }
 
   #logo{
     padding:30px 50px 0 0;
@@ -25,8 +33,7 @@
 
   .bg{
     background:#000;
-    opacity:0.6;
-    filter:alpha(opacity=60);      /* IE */
+    @include opacity(0.6);
   }
 
   #body,

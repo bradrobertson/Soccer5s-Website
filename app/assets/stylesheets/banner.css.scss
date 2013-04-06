@@ -2,7 +2,6 @@
   position:relative;
   background:#000 image-url('banners/default.jpg') no-repeat top right;
   height:250px;
-  border-bottom:5px solid #fdd716;
 
   &.one   { background-image: image-url('banners/pages/one.jpg');   }
   &.two   { background-image: image-url('banners/pages/two.jpg');   }
@@ -10,7 +9,7 @@
   &.four  { background-image: image-url('banners/pages/four.jpg');  }
   &.five  { background-image: image-url('banners/pages/five.jpg');  }
   &.six   { background-image: image-url('banners/pages/six.jpg');   }
-  &.seven { background-image: image-url('banners/pages/seven.jpg');  }
+  &.seven { background-image: image-url('banners/pages/seven.jpg'); }
 
   #logo{
     display: block;
