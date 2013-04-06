@@ -6,6 +6,8 @@
     height:415px;
     border-bottom: 5px solid #fff;
 
+    .heading-bg { width: 425px; }
+
     &.one   { background-image: image-url('banners/home/one.jpg');   }
     &.two   { background-image: image-url('banners/home/two.jpg');   }
     &.three { background-image: image-url('banners/home/three.jpg'); }
