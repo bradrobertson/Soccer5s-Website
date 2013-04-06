@@ -10,6 +10,7 @@ gem 'refinerycms-page-images'
 gem "jquery-rails"    # should shouldn't be needed, refinery depends on it... but if F's up for some reason without it
 gem 'simple_form'
 
+
 group :development, :test do
   gem 'rspec-rails', '~> 2.6.1'
   gem 'database_cleaner', '0.5.2'
@@ -29,6 +30,7 @@ end
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
+  gem 'compass-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby

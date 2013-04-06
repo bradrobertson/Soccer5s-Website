@@ -1,4 +1,5 @@
 @import 'mixins/button';
+@import "compass/css3/images";
 
 #carousel {
   position:relative;
@@ -74,25 +75,27 @@
   }
 
   button.browse{
+    @include background-image(linear-gradient(#575757, #575757 47%, #303030 53%, #303030));
     position:absolute;
-    text-indent:-9999em;
+    display:block;
     top:50%;
     margin-top:-16px;
-    display:block;
     width:32px;
     height:43px;
-    background-repeat: no-repeat;
+    line-height: 43px;
     border:0;
     cursor:pointer;
+    font-family: verdana, arial;
+    font-size: 2em;
+    color: white;
+    padding: 0;
 
     &.prev {
       left:-32px;
-      background-image:image-url('embed/carousel-left.png');
     }
 
     &.next {
       right:-32px;
-      background-image:image-url('embed/carousel-right.png');
     }
   }
 
