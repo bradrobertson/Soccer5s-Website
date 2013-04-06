@@ -1,3 +1,6 @@
+@import "compass/css3/opacity";
+@import 'mixins/transparent-bg';
+
 #banner{
   position:relative;
   background:#000 image-url('banners/default.jpg') no-repeat top right;
@@ -11,23 +14,30 @@
   &.six   { background-image: image-url('banners/pages/six.jpg');   }
   &.seven { background-image: image-url('banners/pages/seven.jpg'); }
 
-  #logo{
-    display: block;
-    padding:30px 0 0 50px;
+  .heading-bg {
+    @include transparent-bg;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 425px;
+    height: 100%;
   }
 
-  #title{
-    position:absolute;
-    bottom:30px;
-    left:30px;
+  #logo {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    display: block;
   }
 
   #slogan{
     position:absolute;
     right:0;
     bottom:30px;
-    width:315px;
+    width:250px;
     background:image-url('embed/slogan-bg-std.png') no-repeat center right;
+    text-align: right;
+    padding-right: 30px;
   }
 
   #slogan.enhanced{

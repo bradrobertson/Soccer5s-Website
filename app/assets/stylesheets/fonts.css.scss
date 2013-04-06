@@ -22,7 +22,7 @@ body h1{
   font-size:30px;
   }
   #home h1{
-    font-size:40px;
+    font-size:34px;
 }
 
 body h2{
@@ -33,12 +33,6 @@ body h2{
   }
   body h2 span.lower{
     text-transform:lowercase;
-}
-
-h2#title{
-  color:#fdd716;
-  font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
-  font-size:30px;
 }
 
 h3{
@@ -73,15 +67,24 @@ strong{
   }
 }
 
-#slogan p{
-  color:#fff;
-  margin:0;
-  font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
-  font-size:21px;
-  text-transform: uppercase;
+#slogan {
+  .title {
+    color: #fdd716;
+    font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
+    font-size: 30px;
   }
-  #slogan p span{
-    color:#fdd716;
+
+  p{
+    color:#fff;
+    margin:0;
+    font-family: 'HelveticaNeueLTStd77BoldConde', helvetica, arial, sans-serif;
+    font-size:21px;
+    text-transform: uppercase;
+
+    span{
+      color:#fdd716;
+    }
+  }
 }
 
 #notice h2,
@@ -101,7 +104,7 @@ strong{
   margin:0;
   }
   #home .info p a{
-    color:#fdd716;
+    color: #579343;
 }
 
 #carousel h2{
