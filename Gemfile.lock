@@ -49,7 +49,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.22)
     multi_json (1.7.2)
-    newrelic_rpm (3.5.5.38)
+    newrelic_rpm (3.6.0.78)
     pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.5)
