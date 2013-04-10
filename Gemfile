@@ -17,13 +17,13 @@ group :development, :test do
   gem 'factory_girl'
   gem 'sqlite3'
   gem 'pry'
+  gem 'aws-sdk'
 end
 
 group :production, :staging do
   gem 'pg', '~> 0.14'
   gem 'newrelic_rpm', '~> 3.5'
   gem 'unicorn', '~> 4.6'
-  gem 'thin', '~> 1.5'
   gem 'fog'
 end
 
