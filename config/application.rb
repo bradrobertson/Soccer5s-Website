@@ -66,6 +66,6 @@ module Soccer5s
     config.assets.version = '1.1'
 
     # requires so heroku doesn't connect to db on precompile
-    config.assets.initialize_on_precompile = true
+    config.assets.initialize_on_precompile = false
   end
 end
