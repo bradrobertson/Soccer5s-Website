@@ -22,7 +22,7 @@
   <%= main do %>
     <div class="panes">
       <div id="show_blog_post">
-        <%= render :partial => "/refinery/blog/shared/post", :object => Refinery::Blog::Post.latest %>
+        <%= render :partial => "/refinery/blog/shared/post_home", :object => Refinery::Blog::Post.latest, as: 'post' %>
       </div>
     </div>
   <% end %>

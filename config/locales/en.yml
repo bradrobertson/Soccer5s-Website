@@ -5,3 +5,9 @@ en:
   refinery:
     footer:
       copyright: "© %{year} %{site_name}"
+    blog:
+      shared:
+        comments:
+          none: ''
+        posts:
+          read_more: More
