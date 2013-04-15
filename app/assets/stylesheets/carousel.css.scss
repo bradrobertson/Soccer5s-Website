@@ -51,19 +51,24 @@
     float:left;
     position:relative;
 
-    img{
+    & > :first-child, & > :first-child > img {
       float:left;
-      margin-right:20px;
+      height: 200px;
+      width: auto;
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
+    & > :first-child { margin-right:20px; }
+
     .page-number{
-      float:right;
+      position: absolute;
+      right: 0;
       bottom:0;
       color:#000;
       font-size:25px;
       font-weight:bold;
-      margin-right:5px;
-      margin-top:160px;
+      margin: 0 5px 0;
     }
 
     .more{
