@@ -1,1 +1,5 @@
 rvm 1.9.3@soccer5s --create
+
+export S3_BUCKET=soccer5s-uploads-dev
+export S3_KEY=AKIAI6ZLBMB7ER7IOPPQ
+export S3_SECRET=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
