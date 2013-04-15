@@ -1,5 +1,5 @@
 @import 'mixins/button';
 
-a.font-size-large, .button {
+a.font-style-button, .button {
   @include button;
 }
