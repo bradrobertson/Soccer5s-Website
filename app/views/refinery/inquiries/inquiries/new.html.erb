@@ -12,9 +12,9 @@
         <%=raw @page.content_for(:body) %>
 
         <%= simple_form_for [refinery, :inquiries, @inquiry] do |f| %>
-          <%= f.input :name, :label => "Your Name <span>(required)</span>".html_safe, :required => false %>
-          <%= f.input :email, :label => "Email Address <span>(required)</span>".html_safe, :required => false %>
-          <%= f.input :phone, :label => "Telephone number" %>
+          <%= f.input :name,  label: "Your Name <span>(required)</span>".html_safe, :required => false %>
+          <%= f.input :email, label: "Email Address <span>(required)</span>".html_safe, :required => false %>
+          <%= f.input :phone, label: "Telephone number <span>(required)</span>".html_safe, required: false %>
           <%= f.input :message, :as => :text, :label => "Your Message".html_safe, :required => false, :error => false %>
 
           <%= f.button :submit, :class => 'submit', :value => t('.send') %>
