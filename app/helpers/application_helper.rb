@@ -8,6 +8,10 @@ module ApplicationHelper
     action_name.underscore
   end
 
+  def page_slug
+    @page.slug
+  end
+
   def body(&block)
     content_tag(:div, id: 'body', &block)
   end
