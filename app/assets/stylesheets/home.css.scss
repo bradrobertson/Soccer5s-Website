@@ -2,20 +2,6 @@
 @import 'mixins/transparent-bg';
 
 #home {
-  #banner{
-    height:415px;
-    border-bottom: 5px solid #fff;
-
-    .heading-bg { width: 425px; }
-
-    &.one   { background-image: image-url('banners/home/one.jpg');   }
-    &.two   { background-image: image-url('banners/home/two.jpg');   }
-    &.three { background-image: image-url('banners/home/three.jpg'); }
-    &.four  { background-image: image-url('banners/home/four.jpg');  }
-    &.five  { background-image: image-url('banners/home/five.jpg');  }
-    &.six   { background-image: image-url('banners/home/six.jpg');   }
-  }
-
   #slogan{
     width:400px;
   }

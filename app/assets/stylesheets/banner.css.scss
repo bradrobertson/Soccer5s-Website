@@ -1,18 +1,24 @@
 @import "compass/css3/opacity";
 @import 'mixins/transparent-bg';
+@import 'mixins/banner-bg';
+
+#home {
+  #banner{
+    height:415px;
+    border-bottom: 5px solid #fff;
+
+    .heading-bg { width: 425px; }
+
+    @include banner-bg('banners/home/', 2);
+  }
+}
 
 #banner{
   position:relative;
   background:#000 image-url('banners/default.jpg') no-repeat top right;
   height:250px;
 
-  &.one   { background-image: image-url('banners/pages/one.jpg');   }
-  &.two   { background-image: image-url('banners/pages/two.jpg');   }
-  &.three { background-image: image-url('banners/pages/three.jpg'); }
-  &.four  { background-image: image-url('banners/pages/four.jpg');  }
-  &.five  { background-image: image-url('banners/pages/five.jpg');  }
-  &.six   { background-image: image-url('banners/pages/six.jpg');   }
-  &.seven { background-image: image-url('banners/pages/seven.jpg'); }
+  @include banner-bg('banners/pages/', 7);
 
   .heading-bg {
     @include transparent-bg;

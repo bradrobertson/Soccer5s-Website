@@ -24,13 +24,17 @@ module ApplicationHelper
     (home_page? ? home_banners : page_banners).sample
   end
 
-private
-
-  def page_banners
-    %w{one two three four five six seven}
+  def random_banner_bg
+    "banner-bg-#{random_banner}"
   end
 
+private
+
   def home_banners
-    %w{one two}
+    (1..2).to_a
+  end
+
+  def page_banners
+    (1..7).to_a
   end
 end
