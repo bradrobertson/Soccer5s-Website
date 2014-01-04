@@ -32,6 +32,13 @@ module ApplicationHelper
     "banner-bg-#{random_banner}"
   end
 
+  def current_league_url
+    @current_league_url ||= begin
+      page = Refinery::Page.by_slug('current').first
+      refinery.url_for page.url_marketable
+    end
+  end
+
 private
 
   def home_banners
