@@ -18,6 +18,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'pry'
   gem 'aws-sdk'
+  gem 'foreman'
 end
 
 group :production, :staging do
