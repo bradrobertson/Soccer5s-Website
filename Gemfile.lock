@@ -204,10 +204,6 @@ GEM
       refinerycms-core (= 2.0.9)
     refinerycms-settings (2.0.2)
       refinerycms-core (~> 2.0.1)
-    refinerycms-videojs (0.5.5.1)
-      dragonfly
-      rack-cache
-      refinerycms-core
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
@@ -274,7 +270,6 @@ DEPENDENCIES
   refinerycms-blog
   refinerycms-inquiries
   refinerycms-page-images
-  refinerycms-videojs
   rspec-rails (~> 2.6.1)
   sass-rails (~> 3.2.3)
   simple_form
