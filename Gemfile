@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-ruby '1.9.3'
+ruby '2.0.0'
 
 gem 'refinerycms'
 gem 'refinerycms-inquiries'
@@ -19,6 +19,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'pry'
   gem 'aws-sdk'
+  gem 'foreman'
 end
 
 group :production, :staging do

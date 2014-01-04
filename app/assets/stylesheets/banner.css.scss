@@ -1,18 +1,14 @@
 @import "compass/css3/opacity";
 @import 'mixins/transparent-bg';
+@import 'mixins/banner-bg';
+
 
 #banner{
   position:relative;
   background:#000 image-url('banners/default.jpg') no-repeat top right;
   height:250px;
 
-  &.one   { background-image: image-url('banners/pages/one.jpg');   }
-  &.two   { background-image: image-url('banners/pages/two.jpg');   }
-  &.three { background-image: image-url('banners/pages/three.jpg'); }
-  &.four  { background-image: image-url('banners/pages/four.jpg');  }
-  &.five  { background-image: image-url('banners/pages/five.jpg');  }
-  &.six   { background-image: image-url('banners/pages/six.jpg');   }
-  &.seven { background-image: image-url('banners/pages/seven.jpg'); }
+  @include banner-bg('banners/pages/', 7);
 
   .heading-bg {
     @include transparent-bg;
@@ -55,6 +51,61 @@
     img{
       float:left;
       padding:5px;
+    }
+  }
+}
+
+#home {
+  #banner{
+    height:415px;
+    border-bottom: 5px solid #fff;
+
+    .heading-bg { width: 425px; }
+
+    @include banner-bg('banners/home/', 6);
+  }
+
+}
+
+/**
+*
+*   Hacks for custom per-page backgrounds
+*
+*/
+
+// Copa Bar
+body.copa-bar, body.whats-on, body.social, body.menu {
+  #banner {
+    &.banner-bg-1, &.banner-bg-2, &.banner-bg-3, &.banner-bg-4 {
+      background-image: image-url('banners/copa/banner-bg-1.jpg');
+    }
+
+    &.banner-bg-5, &.banner-bg-6, &.banner-bg-7 {
+      background-image: image-url('banners/copa/banner-bg-2.jpg');
+    }
+  }
+}
+
+// Leagues - Mariners Kids Leagues
+body.mariners {
+  #banner {
+    background-image: image-url('banners/kids/banner-bg-1.jpg');
+  }
+}
+
+// Coaching
+body.juniormariners, body.halfterm, body.kids-parties, body.coaches {
+  #banner {
+    &.banner-bg-1, &.banner-bg-2, &.banner-bg-3 {
+      background-image: image-url('banners/coaching/banner-bg-1.jpg');
+    }
+
+    &.banner-bg-4, &.banner-bg-5 {
+      background-image: image-url('banners/coaching/banner-bg-2.jpg');
+    }
+
+    &.banner-bg-6, &.banner-bg-7 {
+      background-image: image-url('banners/coaching/banner-bg-3.jpg');
     }
   }
 }

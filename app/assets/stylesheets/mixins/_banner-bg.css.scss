@@ -1,0 +1,7 @@
+@mixin banner-bg($path, $x, $bg-class: 'banner-bg-') {
+  @for $i from 1 through $x {
+    &.#{$bg-class}#{$i} {
+      background-image: image-url($path + $bg-class + $i + '.jpg');
+    }
+  }
+}
