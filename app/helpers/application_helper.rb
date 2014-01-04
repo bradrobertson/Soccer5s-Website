@@ -31,7 +31,7 @@ module ApplicationHelper
 private
 
   def home_banners
-    (1..2).to_a
+    (1..6).to_a
   end
 
   def page_banners
