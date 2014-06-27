@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(:version => 20130120183003) do
 
   create_table "clients", :force => true do |t|
     t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "competitions", :force => true do |t|
@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(:version => 20130120183003) do
     t.string   "email"
     t.string   "telephone"
     t.text     "comments"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
     t.boolean  "terms"
     t.string   "subject"
   end
@@ -37,8 +37,8 @@ ActiveRecord::Schema.define(:version => 20130120183003) do
     t.string   "email"
     t.string   "telephone"
     t.text     "message"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "refinery_blog_categories", :force => true do |t|
