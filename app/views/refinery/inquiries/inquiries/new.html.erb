@@ -16,6 +16,7 @@
           <%= f.input :email, label: "Email Address <span>(required)</span>".html_safe, :required => false %>
           <%= f.input :phone, label: "Telephone number <span>(required)</span>".html_safe, required: false %>
           <%= f.input :message, :as => :text, :label => "Your Message".html_safe, :required => false, :error => false %>
+          <%= f.input :bot_protection, label: "Don't fill this in", wrapper_html: {style: 'display: none;'} %>
 
           <%= f.button :submit, :class => 'submit', :value => t('.send') %>
           <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if Refinery::Inquiries.show_contact_privacy_link %>
