@@ -27,10 +27,10 @@ module ApplicationHelper
 private
 
   def page_banners
-    %w{one two three four five six seven}
+    %w{one two three four five six seven eight nine}
   end
 
   def home_banners
-    %w{one two}
+    %w{one two three}
   end
 end
