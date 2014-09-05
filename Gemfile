@@ -9,7 +9,7 @@ gem 'refinerycms-page-images'
 
 gem "jquery-rails"    # should shouldn't be needed, refinery depends on it... but if F's up for some reason without it
 gem 'simple_form'
-
+gem 'pg', '~> 0.14'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.6.1'
@@ -21,7 +21,6 @@ group :development, :test do
 end
 
 group :production, :staging do
-  gem 'pg', '~> 0.14'
   gem 'newrelic_rpm', '~> 3.5'
   gem 'unicorn', '~> 4.6'
   gem 'fog'
